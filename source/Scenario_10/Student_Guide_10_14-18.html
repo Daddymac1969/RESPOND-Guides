@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudes, Pressure and Threats Online: What to Do | RESPOND Student Guide 10 - 14 to 18</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #7c3aed;
+            --success: #059669;
+            --warning: #d97706;
+            --error: #dc2626;
+            --info: #0891b2;
+            --recognise: #24457B;
+            --engage: #1E5947;
+            --support: #C27D56;
+            --pause: #D13529;
+            --offer: #F0B126;
+            --notify: #2E81CF;
+            --document: #8424E8;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .respond-dots {
+            display: inline-flex;
+            gap: 4px;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+
+        .respond-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header .scenario-number {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .national-emergency {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #7f1d1d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .national-emergency h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .situation-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .situation-box h2 {
+            color: #92400e;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .situation-box .situation-text {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #78350f;
+            line-height: 1.5;
+        }
+
+        .context-indicators {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .context-indicators h3 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .context-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            border: 2px solid var(--border);
+        }
+
+        .badge.category {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .badge.severity {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-color: var(--error);
+            color: var(--error);
+        }
+
+        .badge.priority {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-color: var(--warning);
+            color: #92400e;
+        }
+
+        .info-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .info-icon {
+            margin-right: 8px;
+            color: var(--info);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .respond-section {
+            background: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .respond-header {
+            padding: 20px 25px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .respond-header:hover {
+            filter: brightness(1.1);
+        }
+
+        .respond-header h2 {
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .respond-letter {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-icon {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .respond-header.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+
+        .respond-content {
+            padding: 30px;
+            display: none;
+        }
+
+        .respond-content.show {
+            display: block;
+        }
+
+        .r-header { background: linear-gradient(135deg, var(--recognise) 0%, #1a2f5a 100%); }
+        .e-header { background: linear-gradient(135deg, var(--engage) 0%, #1a4839 100%); }
+        .s-header { background: linear-gradient(135deg, var(--support) 0%, #9a5f3f 100%); }
+        .p-header { background: linear-gradient(135deg, var(--pause) 0%, #a92a21 100%); }
+        .o-header { background: linear-gradient(135deg, var(--offer) 0%, #b9850f 100%); }
+        .o-header h2 { text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
+        .n-header { background: linear-gradient(135deg, var(--notify) 0%, #1f5f9e 100%); }
+        .d-header { background: linear-gradient(135deg, var(--document) 0%, #6b1ec0 100%); }
+
+        .subsection {
+            margin: 25px 0;
+        }
+
+        .subsection h3 {
+            color: var(--text-dark);
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .subsection h4 {
+            color: var(--text-dark);
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--warning);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .critical-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 4px solid var(--error);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .critical-box h4 {
+            color: #991b1b;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 4px solid var(--success);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .success-box h4 {
+            color: #065f46;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--info);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-box h4 {
+            color: #0c4a6e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .list-styled {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .list-styled li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            margin: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .do-dont-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .do-box {
+            background: #f0fdf4;
+            border: 2px solid var(--success);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .do-box h4 {
+            color: var(--success);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dont-box {
+            background: #fef2f2;
+            border: 2px solid var(--error);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .dont-box h4 {
+            color: var(--error);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quote-box {
+            background: #f8fafc;
+            border-left: 4px solid var(--primary);
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-style: italic;
+            color: var(--text-dark);
+        }
+
+        .accordion {
+            margin: 15px 0;
+        }
+
+        .accordion-header {
+            background: var(--bg-light);
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 2px solid var(--border);
+        }
+
+        .accordion-header:hover {
+            background: #e2e8f0;
+        }
+
+        .accordion-header h4 {
+            margin: 0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+            border: 2px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .accordion-body.open {
+            max-height: 5000px;
+            padding: 20px;
+        }
+
+        .stat-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 10px 0;
+            color: #78350f;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1e3a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: var(--text-light);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-dark);
+        }
+
+        .print-btn {
+            background: var(--success);
+            color: white;
+        }
+
+        .print-btn:hover {
+            background: #047857;
+        }
+
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @page { size: A4; margin: 14mm 12mm; }
+        @media print {
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; box-shadow: none !important; }
+            body {
+                background: white;
+                font-size: 11pt;
+            }
+            .container { max-width: none; padding: 0; }
+            .nav-buttons, .toggle-icon, .action-buttons, .accordion-header > span:last-child, .print-hint {
+                display: none !important;
+            }
+            .accordion-header { border-radius: 8px 8px 0 0; }
+            .quote-box, li, .accordion-header, .stat-highlight { break-inside: avoid; }
+            h2, h3, h4, .respond-header { break-after: avoid; }
+            a { color: inherit; text-decoration: none; }
+            .respond-content {
+                display: block !important;
+                max-height: none !important;
+            }
+            .accordion-body {
+                display: block !important;
+                max-height: none !important;
+                padding: 20px !important;
+            }
+            .respond-section { break-inside: auto; margin-bottom: 14px; }
+            .respond-content { padding: 16px 18px; }
+            .subsection { margin: 14px 0; }
+            .warning-box, .critical-box, .success-box, .info-box, .do-box, .dont-box { margin: 10px 0; padding: 12px 16px; }
+            .national-emergency, .situation-box { padding: 16px 18px; margin-bottom: 14px; }
+            header { padding: 22px 20px; margin-bottom: 14px; }
+            header h1 { font-size: 1.8em; }
+            .respond-header { padding: 10px 16px; }
+            .respond-header h2 { font-size: 1.3em; }
+            .respond-letter { width: 40px; height: 40px; font-size: 1.6em; }
+            .accordion { margin: 8px 0; }
+            .accordion-body.open { padding: 10px 14px !important; }
+            .list-styled li, .checklist li { margin: 3px 0; }
+            header {
+                page-break-after: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .respond-header h2 {
+                font-size: 1.3em;
+            }
+
+            .respond-letter {
+                width: 45px;
+                height: 45px;
+                font-size: 1.8em;
+            }
+
+            .do-dont-container {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .content-warning { background:#FFF7E6; border:2px solid #C27D56; border-left:8px solid #D13529; border-radius:10px; margin-bottom:30px; color:#1e293b; }
+        .content-warning summary { list-style:none; cursor:pointer; padding:18px 25px; display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; position:relative; padding-right:55px; }
+        .content-warning summary::-webkit-details-marker { display:none; }
+        .content-warning summary:focus-visible { outline:3px solid #2E81CF; outline-offset:2px; border-radius:8px; }
+        .cw-title { font-size:1.4em; font-weight:700; color:#9a2a20; display:flex; align-items:center; gap:10px; }
+        .cw-sub { font-size:1em; color:#1e293b; }
+        .cw-toggle { position:absolute; right:22px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#9a2a20; font-size:1.2em; }
+        .content-warning[open] .cw-toggle { transform:translateY(-50%) rotate(0deg); }
+        .cw-body { padding:0 25px 22px 25px; line-height:1.7; }
+        @media print { .content-warning .cw-body { display:block !important; } .cw-toggle { display:none; } }
+
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 10px; }
+        .stat-tile { background: #ffffff; border: 1px solid var(--border); border-top: 4px solid #1E3D6F; border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; break-inside: avoid; }
+        .stat-value { font-size: 2em; font-weight: 700; color: #1E3D6F; line-height: 1.1; }
+        .stat-label { font-size: 0.95em; color: #1e293b; line-height: 1.45; }
+        .stat-source { font-size: 0.78em; color: #64748b; line-height: 1.35; margin-top: auto; padding-top: 6px; border-top: 1px solid var(--border); }
+        .stat-note { font-size: 0.88em; color: #475569; margin-top: 10px; line-height: 1.5; }
+
+        .hbar-chart { margin: 6px 0 4px 0; }
+        .hbar-row { display: grid; grid-template-columns: minmax(180px, 300px) 1fr; gap: 6px 14px; align-items: center; padding: 8px 0; border-bottom: 1px solid #eef2f6; break-inside: avoid; }
+        .hbar-label { font-size: 0.95em; color: #1e293b; text-align: right; }
+        .hbar-bars { display: flex; flex-direction: column; gap: 2px; }
+        .hbar-line { display: flex; align-items: center; gap: 6px; }
+        .hbar-fill { height: 14px; border-radius: 0 4px 4px 0; min-width: 2px; }
+        .hbar-val { font-size: 0.85em; font-weight: 600; color: #1e293b; }
+        .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+        @media (max-width: 600px) { .hbar-row { grid-template-columns: 1fr; } .hbar-label { text-align: left; font-weight: 600; } }
+
+        .respond-key { width: 100%; border-collapse: collapse; font-size: 0.93em; background: #fff; border-radius: 8px; overflow: hidden; }
+        .respond-key th { background: #1E3D6F; color: #fff; text-align: left; padding: 8px 10px; font-weight: 600; }
+        .respond-key td { padding: 8px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+        .k-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+        .tagline { font-style: italic; font-weight: 600; color: #1E3D6F; margin: 10px 0; }
+
+        .source-list li { font-size: 0.9em; }
+        .source-list a, .stat-source a, .stat-note a { color: #1E3D6F; text-decoration: underline; }
+        .place { display: inline-block; font-size: 0.8em; font-weight: 700; padding: 2px 9px; border-radius: 10px; color: #fff; white-space: nowrap; }
+        .place-a { background: #1E5947; } .place-b { background: #9a6b12; } .place-c { background: #2E81CF; } .place-d { background: #D13529; }
+        .age-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0; }
+        .age-col { background: #fff; border: 1px solid var(--border); border-top: 5px solid #1E3D6F; border-radius: 8px; padding: 12px 14px; }
+        .age-col h4 { margin: 0 0 6px 0; color: #1E3D6F; }
+        .age-col .age-tag { font-size: 0.85em; font-weight: 600; color: #475569; margin-bottom: 6px; }
+        .shape-row { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 8px; align-items: stretch; margin: 12px 0; }
+        .shape-row .shape { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+        .shape-row .shape b { display: block; color: #1E3D6F; margin-bottom: 4px; }
+        .shape-row .arrow { display: flex; align-items: center; color: #94a3b8; font-size: 1.4em; }
+        .fake-post { max-width: 460px; margin: 12px auto; background: #0f172a; color: #f8fafc; border-radius: 14px; padding: 16px 18px; font-size: 0.95em; line-height: 1.5; }
+        .fake-post .fp-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+        .fake-post .fp-av { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg,#64748b,#334155); flex-shrink: 0; }
+        .fake-post .fp-name { font-weight: 700; } .fake-post .fp-meta { font-size: 0.8em; color: #94a3b8; }
+        .fake-post p { margin: 6px 0; }
+        .fake-label { text-align: center; font-size: 0.85em; color: #475569; font-style: italic; }
+        .noise-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 12px 0; }
+        .noise-grid > div { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+        .noise-grid .nl { font-size: 1.8em; font-weight: 800; color: #1E3D6F; line-height: 1; }
+        .noise-grid .nw { font-weight: 700; margin: 4px 0; }
+        .noise-grid .nq { font-size: 0.88em; color: #475569; }
+        @media (max-width: 760px) {
+            .age-cols, .noise-grid { grid-template-columns: 1fr; }
+            .shape-row { grid-template-columns: 1fr; } .shape-row .arrow { justify-content: center; transform: rotate(90deg); }
+        }
+        @media print { .source-list a, .stat-source a, .stat-note a { text-decoration: none; } .age-col, .noise-grid > div, .shape { break-inside: avoid; } .noise-grid { grid-template-columns: repeat(5, 1fr) !important; } .age-cols { grid-template-columns: repeat(3, 1fr) !important; } .shape-row { grid-template-columns: 1fr auto 1fr auto 1fr !important; } .shape-row .arrow { transform: none !important; } }
+        .action-buttons a.btn, .nav-buttons a.btn { text-align: center; justify-content: center; text-decoration: none; }
+        .guide-panel { background:#fff; border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:0 0 24px 0; }
+        .guide-panel h3 { margin:0 0 4px 0; color:#1E3D6F; }
+        .guide-panel > p { margin:0 0 12px 0; color:#475569; font-size:0.95em; }
+        .guide-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+        .guide-card { border-radius:10px; padding:14px 16px; color:#fff; display:flex; flex-direction:column; gap:6px; }
+        .guide-card .gc-top { font-weight:700; font-size:1.02em; }
+        .guide-card .gc-title { font-size:0.9em; opacity:0.92; flex:1; }
+        .guide-card .gc-who { font-size:0.85em; font-weight:600; }
+        .guide-card .gc-links { display:flex; gap:8px; margin-top:6px; flex-wrap:wrap; }
+        .guide-card .gc-links a { background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.45); color:#fff; text-decoration:none; padding:6px 12px; border-radius:6px; font-weight:600; font-size:0.9em; }
+        .guide-card .gc-links a:hover { background:rgba(255,255,255,0.28); }
+        @media (max-width:760px) { .guide-grid { grid-template-columns:1fr; } }
+        @media print { .guide-grid { grid-template-columns:repeat(3,1fr) !important; } .guide-card { break-inside:avoid; } }
+        .guide-panel > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding-right:30px; position:relative; }
+        .guide-panel > summary::-webkit-details-marker { display:none; }
+        .guide-panel .gp-title { font-weight:700; font-size:1.1em; color:#1E3D6F; }
+        .guide-panel .gp-sub { color:#475569; font-size:0.95em; }
+        .guide-panel .gp-toggle { position:absolute; right:4px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#1E3D6F; }
+        .guide-panel[open] .gp-toggle { transform:translateY(-50%) rotate(0deg); }
+        .guide-panel[open] > summary { margin-bottom:10px; }
+        .guide-panel { background:#EAF1FB !important; border:1px solid #9DB6DA !important; border-left:8px solid #1E3D6F !important; }
+        .age-chip { display:inline-block; background:#F5C842; color:#0F1644; font-weight:700; font-size:0.95em; padding:4px 14px; border-radius:999px; margin-bottom:12px; }
+        .screen-only {}
+        @media print { .screen-only { display:none !important; } .hbar-chart { break-inside: avoid; } footer { break-inside: avoid; } }
+        .contents-panel { background:#F1F5F9; border:1px solid #CBD5E1; border-left:8px solid #334155; border-radius:12px; padding:18px 20px; margin:0 0 24px 0; }
+        .contents-panel > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding-right:30px; position:relative; }
+        .contents-panel > summary::-webkit-details-marker { display:none; }
+        .contents-panel .cp-title { font-weight:700; font-size:1.1em; color:#1E293B; }
+        .contents-panel .cp-sub { color:#475569; font-size:0.95em; }
+        .contents-panel .cp-toggle { position:absolute; right:4px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#334155; }
+        .contents-panel[open] .cp-toggle { transform:translateY(-50%) rotate(0deg); }
+        .contents-panel ol { columns:2; column-gap:32px; margin:12px 0 0 0; padding-left:24px; }
+        .contents-panel li { break-inside:avoid; margin:4px 0; }
+        .contents-panel a { color:#1E3D6F; text-decoration:none; font-weight:600; }
+        .contents-panel a:hover { text-decoration:underline; }
+        @media (max-width:760px) { .contents-panel ol { columns:1; } }
+        @media print { .contents-panel { display:none !important; } }
+        .step-card .step-name { color: var(--c); }
+        .step-card[style*="#F0B126"] .step-name { color: #B9850F; }
+        .content-warning { margin-bottom:14px !important; }
+        .content-warning summary { padding:12px 20px !important; padding-right:48px !important; }
+        .cw-title { font-size:1.12em !important; }
+        .cw-sub { font-size:0.93em !important; }
+        .top-toolbar { position:relative; display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:#fff; border:1px solid var(--border); border-radius:12px; padding:8px; margin:0 0 26px 0; box-shadow:0 1px 3px rgba(15,23,42,0.06); }
+        .top-toolbar .tb-spacer { flex:1; }
+        .tb-btn { display:inline-flex; align-items:center; gap:8px; background:#EAF1FB; color:#1E293B; border:1px solid #B8CCE8; border-radius:8px; padding:8px 14px; font:inherit; font-size:0.95em; font-weight:600; cursor:pointer; text-decoration:none; line-height:1.2; }
+        .tb-btn:hover { background:#DCE8F8; }
+        .tb-btn:focus-visible { outline:3px solid #2E81CF; outline-offset:2px; }
+        .tb-btn.tb-primary { background:#1E3D6F; border-color:#1E3D6F; color:#fff; }
+        .tb-btn.tb-primary:hover { background:#16305A; }
+        .tb-drop { position:static; }
+        .tb-drop > summary { list-style:none; }
+        .tb-drop > summary::-webkit-details-marker { display:none; }
+        .tb-drop > summary .tb-caret { font-size:0.75em; transition:transform 0.2s ease; }
+        .tb-drop[open] > summary { background:#D3E2F6; border-color:#1E3D6F; }
+        .tb-drop[open] > summary .tb-caret { transform:rotate(180deg); }
+        .tb-panel { position:absolute; left:0; right:0; top:calc(100% + 6px); z-index:60; background:#fff; border:1px solid #CBD5E1; border-radius:12px; box-shadow:0 12px 32px rgba(15,23,42,0.18); padding:16px 18px; max-height:70vh; overflow:auto; }
+        .tb-panel .tb-note { margin:0 0 10px 0; color:#475569; font-size:0.92em; }
+        .tb-panel ol { columns:2; column-gap:32px; margin:0; padding-left:24px; }
+        .tb-panel li { break-inside:avoid; margin:4px 0; }
+        .tb-panel a.toc-link { color:#1E3D6F; text-decoration:none; font-weight:600; }
+        .tb-panel a.toc-link:hover { text-decoration:underline; }
+        @media (max-width:760px) {
+            .top-toolbar .tb-spacer { display:none; }
+            .top-toolbar { gap:6px; padding:6px; }
+            .tb-btn { font-size:0.88em; padding:8px 8px; white-space:nowrap; }
+            .top-toolbar > .tb-drop { flex:1 1 calc(50% - 6px); min-width:0; }
+            .top-toolbar > .tb-btn { flex:1 1 calc(33% - 6px); }
+            .top-toolbar > .tb-drop > summary { width:100%; justify-content:center; box-sizing:border-box; }
+            .top-toolbar > .tb-btn { justify-content:center; }
+            .tb-panel ol { columns:1; }
+        }
+        @media print { .top-toolbar { display:none !important; } }
+        .tb-search { display:flex; align-items:center; gap:4px; flex:1 1 260px; max-width:420px; background:#EAF1FB; border:1px solid #B8CCE8; border-radius:8px; padding:2px 4px 2px 10px; }
+        .tb-search:focus-within { outline:3px solid #2E81CF; outline-offset:1px; }
+        .tb-search-input { flex:1; min-width:0; border:none; background:transparent; font:inherit; font-size:0.95em; padding:6px 2px; color:#1E293B; outline:none; }
+        .tb-search-count { font-size:0.82em; color:#475569; white-space:nowrap; }
+        .tb-search-nav { border:none; background:transparent; cursor:pointer; font-size:1em; padding:4px 6px; border-radius:6px; color:#1E3D6F; }
+        .tb-search-nav:hover { background:#DCE8F8; }
+        mark.srch-hit { background:#FDE68A; color:inherit; padding:0 1px; border-radius:2px; }
+        mark.srch-hit.srch-current { background:#F59E0B; box-shadow:0 0 0 2px #B45309; }
+        @media (max-width:760px) { .tb-search { flex:1 1 100%; max-width:none; order:-1; } }
+        @media print { mark.srch-hit { background:none !important; box-shadow:none !important; } }
+        @media (min-width:761px) { .top-toolbar { position:sticky; top:8px; z-index:70; } }
+        .srch-bubble { position:fixed; left:50%; bottom:14px; transform:translateX(-50%); z-index:90; display:none; align-items:center; gap:2px; background:#1E293B; color:#fff; border-radius:999px; padding:6px 8px 6px 16px; box-shadow:0 6px 18px rgba(15,23,42,0.3); font-size:0.95em; }
+        .srch-bubble button { border:none; background:transparent; color:#fff; cursor:pointer; font-size:1.1em; padding:6px 10px; border-radius:999px; line-height:1; }
+        .srch-bubble button:hover, .srch-bubble button:focus-visible { background:rgba(255,255,255,0.18); outline:none; }
+        .srch-bubble .sb-count { margin-right:6px; white-space:nowrap; }
+        @media (max-width:760px) { .srch-bubble.show { display:inline-flex; } }
+        @media print { .srch-bubble { display:none !important; } }
+        .print-only { display:none; }
+        @media print { .print-only { display:block !important; } }
+        .helix-demo { background:#fff; border:1px solid var(--border); border-radius:14px; padding:14px; margin:12px 0; }
+        .hx-tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+        .hx-tab { font:inherit; font-size:0.92em; font-weight:600; padding:7px 13px; border-radius:999px; border:1px solid #B8CCE8; background:#EAF1FB; color:#1E293B; cursor:pointer; }
+        .hx-tab[aria-selected="true"] { background:#1E3D6F; border-color:#1E3D6F; color:#fff; }
+        .hx-tab:focus-visible, .helix-demo .tb-btn:focus-visible { outline:3px solid #2E81CF; outline-offset:2px; }
+        .hx-intro { margin:4px 2px 8px; color:#475569; font-size:0.95em; }
+        .hx-stage { position:relative; background:radial-gradient(ellipse at 50% 45%, #FFFFFF 0%, #F1F5F9 75%); border-radius:10px; overflow:hidden; }
+        .hx-stage canvas { display:block; width:100%; height:430px; cursor:grab; touch-action:pan-y; }
+        .hx-stage canvas:active { cursor:grabbing; }
+        .hx-legend { position:absolute; left:10px; bottom:8px; display:flex; flex-direction:column; gap:3px; font-size:0.8em; color:#334155; pointer-events:none; }
+        .hx-legend span { display:flex; align-items:center; gap:6px; }
+        .hx-legend i { width:18px; height:0; border-top:3px solid #334155; display:inline-block; }
+        .hx-legend i.dash { border-top-style:dashed; }
+        .hx-legend i.sw { height:10px; width:10px; border:none; border-radius:50%; }
+        .hx-zoom { position:absolute; top:8px; right:8px; display:flex; flex-direction:column; gap:4px; }
+        .hx-zoom button { width:34px; height:34px; border-radius:8px; border:1px solid #B8CCE8; background:rgba(255,255,255,0.92); color:#1E3D6F; font-size:1.15em; font-weight:700; cursor:pointer; line-height:1; }
+        .hx-zoom button:hover { background:#EAF1FB; }
+        .hx-zoom button:focus-visible { outline:3px solid #2E81CF; outline-offset:1px; }
+        .hx-hint { position:absolute; top:10px; left:12px; font-size:0.78em; color:#64748B; pointer-events:none; }
+        .hx-tip { position:absolute; z-index:5; max-width:260px; background:#1E293B; color:#fff; font-size:0.85em; line-height:1.4; padding:8px 10px; border-radius:8px; box-shadow:0 6px 18px rgba(15,23,42,0.25); pointer-events:none; display:none; }
+        .hx-tip b { display:block; margin-bottom:2px; }
+        .hx-stage canvas:focus-visible { outline:3px solid #2E81CF; outline-offset:-3px; }
+        .hx-stage:fullscreen { background:#F8FAFC; display:flex; align-items:center; }
+        .hx-stage:fullscreen canvas { height:100vh; }
+        .hx-caption { min-height:92px; padding:10px 4px 2px; }
+        .hx-label { display:flex; align-items:center; gap:8px; font-weight:700; color:#1E293B; }
+        .hx-chip { display:inline-block; padding:2px 10px; border-radius:999px; color:#fff; font-size:0.85em; }
+        .hx-chip:empty { display:none; }
+        .hx-text { margin:6px 0 0; }
+        .hx-controls { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+        .hx-count { flex:1; text-align:center; color:#475569; font-size:0.9em; }
+        .helix-text { margin:8px 0; }
+        .helix-text summary { cursor:pointer; font-weight:600; color:#1E3D6F; }
+        .helix-text h5 { margin:12px 0 4px; font-size:1em; color:#1E3D6F; }
+        @media (max-width:760px) { .hx-tabs { flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; scrollbar-width:thin; } .hx-tab { white-space:nowrap; flex-shrink:0; } .hx-stage canvas { height:360px; } .hx-hint { display:none; } .hx-legend { position:static; flex-direction:row; flex-wrap:wrap; gap:4px 12px; padding:6px 10px 8px; font-size:0.78em; } .hx-count { white-space:nowrap; font-size:0.85em; } .hx-controls { flex-wrap:nowrap; gap:5px; } .helix-demo .tb-btn { padding:7px 9px; font-size:0.85em; } }
+        @media print { .hx-tabs, .hx-controls, .hx-caption, .hx-intro, .hx-legend, .hx-zoom, .hx-hint, .hx-tip { display:none !important; } .helix-demo { break-inside:avoid; } .hx-stage canvas { height:auto !important; } }
+        .dsl-panel { border:1px solid #CBD5E1; border-left:6px solid #2E81CF; border-radius:10px; background:#F8FAFC; margin:18px 0; }
+        .dsl-panel > summary { cursor:pointer; padding:12px 16px; font-weight:700; color:#1E3D6F; list-style:none; }
+        .dsl-panel > summary::-webkit-details-marker { display:none; }
+        .dsl-panel > summary::before { content:"\25B6"; display:inline-block; margin-right:8px; font-size:0.8em; transition:transform 0.2s ease; }
+        .dsl-panel[open] > summary::before { transform:rotate(90deg); }
+        .dsl-panel > summary .dsl-sub { display:block; font-weight:400; font-size:0.9em; color:#475569; margin-left:22px; }
+        .dsl-panel > .dsl-body { padding:0 16px 8px; }
+        .national-emergency a { color:#fff; text-decoration:underline; }
+        .ops-emergency { background:#FEF2F2; border:2px solid #D13529; border-radius:12px; padding:12px 16px; margin:0 0 18px 0; color:#7F1D1D; }
+        .ops-emergency p { margin:0; line-height:1.55; }
+        .ops-emergency a.toc-link { color:#7F1D1D; font-weight:700; text-decoration:underline; }
+        .ops-contacts td { height:2.2em; }
+        .ops-contacts td:first-child { width:45%; font-weight:600; }
+        @media print { .ops-emergency, .ops-contacts { break-inside:avoid; } }
+    
+        .myth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin: 10px 0; }
+        .myth-grid > div { padding: 12px 16px; border-top: 1px solid var(--border); }
+        .myth-grid .mh { background: #1E3D6F; color: #fff; font-weight: 700; border-top: none; }
+        .myth-grid .myth { background: #fef2f2; font-weight: 600; }
+        .myth-grid .fact { background: #f0fdf4; }
+        .step-card { border: 1px solid var(--border); border-left: 6px solid var(--c); border-radius: 8px; padding: 14px 16px; margin: 10px 0; background: #fff; break-inside: avoid; }
+        .step-card .step-top { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+        .step-card .step-letter { width: 38px; height: 38px; border-radius: 50%; background: var(--c); color: #fff; font-weight: 700; font-size: 1.3em; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .step-card .step-name { font-weight: 700; font-size: 1.15em; color: var(--c); }
+        .step-card .step-sub { font-size: 0.9em; color: #475569; }
+        .cluster-head { display: flex; align-items: center; gap: 10px; margin: 22px 0 6px 0; padding: 8px 14px; border-radius: 8px; color: #fff; font-weight: 700; }
+        .contact-list li { margin: 6px 0; }
+        @media (max-width: 600px) { .myth-grid { grid-template-columns: 1fr; } .myth-grid .mh:nth-child(2) { display: none; } }
+
+        body { background: #F8FAFC; }
+        header { background: linear-gradient(135deg, #1E293B 0%, #9F1239 100%); }
+        .stat-tile { border-top-color: #9F1239; }
+        .stat-value { color: #9F1239; }
+        .btn-primary { background: #9F1239; }
+        .btn-primary:hover { background: #1E293B; }
+        footer { background: #1E293B; }
+        .myth-grid .mh { background: #1E293B; }
+        .age-chip { display: inline-block; background: #FFE4E6; color: #881337; font-weight: 700; font-size: 0.95em; padding: 4px 14px; border-radius: 999px; margin-bottom: 12px; }
+        .screen-only {}
+        @media print { .screen-only { display:none !important; } .hbar-chart { break-inside: avoid; } footer { break-inside: avoid; } }
+    </style>
+<link rel="icon" type="image/png" sizes="any" href="../../favicons/R_Student_14-18_10.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+<img class="respond-page-favicon" src="../../favicons/R_Student_14-18_10.png" alt="RESPOND Student 14-18 10 icon" width="56" height="56" loading="eager" decoding="async" style="display:block;width:56px;height:56px;object-fit:contain;border-radius:12px;margin:0 0 12px 0;" />
+
+            <div style="text-align: left;"><span style="display:inline-flex;gap:4px;margin-bottom:8px;"><span style="width:10px;height:10px;border-radius:50%;background:#24457B;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#1E5947;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#C27D56;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#D13529;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#F0B126;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#2E81CF;display:inline-block;"></span><span style="width:10px;height:10px;border-radius:50%;background:#8424E8;display:inline-block;"></span></span></div>
+            <div class="scenario-number"><strong>RESPOND</strong> Safeguarding Framework · Student Guide 10 - 14 to 18</div>
+            <div class="age-chip">Ages 14 to 18</div>
+            <h1>Nudes, Pressure and Threats Online: What to Do</h1>
+            <p style="font-size: 1.1em; margin-top: 15px;">Pressure to send nudes, images shared without consent, sextortion and online blackmail: what the law says, what to do, and how to help a friend. For all students.</p>
+        </header>
+
+        <details class="content-warning" aria-label="Before you read">
+            <summary>
+                <span class="cw-title"><i class="fas fa-exclamation-circle"></i> Before You Read</span>
+                <span class="cw-sub">This guide covers nude images, image-based abuse, sextortion and online blackmail. <span class="screen-only">Select to read how to get help.</span></span>
+                <span class="cw-toggle" aria-hidden="true">▼</span>
+            </summary>
+            <div class="cw-body">
+                <p>This guide is about nude and semi-nude images: pressure to send them, images shared without consent, fake images, sextortion and other online blackmail. It doesn't show or describe any images. Some of it may be difficult to read, especially if it connects with something that has happened to you or someone close to you.</p>
+                <ul class="list-styled">
+                    <li>Read it in sections, take a break, or stop whenever you need to.</li>
+                    <li>You can talk to any adult you trust at school, including the safeguarding team, a counsellor or the school nurse.</li>
+                    <li><strong>Childline</strong>: <a href="tel:08001111">0800 1111</a>, free and confidential, any time, day or night. You can also use 1-2-1 chat at <a href="https://childline.org.uk" target="_blank" rel="noopener">childline.org.uk</a>, but you may have to wait for a counsellor, so calling is usually quickest.</li>
+                    <li><strong>Shout</strong>: text SHOUT to <a href="sms:85258">85258</a>, free, 24/7.</li>
+                </ul>
+                <p style="margin-top:10px; font-weight:600;">If you or someone else is in immediate danger, call 999.</p>
+            </div>
+        </details>
+
+        <nav class="top-toolbar" aria-label="Page tools">
+            <details class="tb-drop">
+                <summary class="tb-btn"><i class="fas fa-list-ul"></i> Contents <span class="tb-caret">▼</span></summary>
+                <div class="tb-panel">
+                    <p class="tb-note">Choose a section to open it and jump straight there.</p>
+                    <ol><li><a href="#sec-1" class="toc-link" data-target="sec-1">Key Words</a></li><li><a href="#sec-2" class="toc-link" data-target="sec-2">What the Data Shows</a></li><li><a href="#sec-3" class="toc-link" data-target="sec-3">What the Law Says</a></li><li><a href="#sec-4" class="toc-link" data-target="sec-4">Pressure and Consent</a></li><li><a href="#sec-5" class="toc-link" data-target="sec-5">If a Nude of You Has Been Shared</a></li><li><a href="#sec-6" class="toc-link" data-target="sec-6">Sextortion and Online Blackmail</a></li><li><a href="#sec-7" class="toc-link" data-target="sec-7">If You&#x27;re Sent Someone Else&#x27;s Image</a></li><li><a href="#sec-8" class="toc-link" data-target="sec-8">Getting Images Taken Down</a></li><li><a href="#sec-9" class="toc-link" data-target="sec-9">RESPOND: If It&#x27;s Happening to Someone Else</a></li><li><a href="#sec-10" class="toc-link" data-target="sec-10">What Happens When You Tell</a></li><li><a href="#sec-11" class="toc-link" data-target="sec-11">If You&#x27;ve Been Part of It</a></li><li><a href="#sec-12" class="toc-link" data-target="sec-12">Myths and Facts</a></li><li><a href="#sec-13" class="toc-link" data-target="sec-13">If You Board</a></li><li><a href="#sec-14" class="toc-link" data-target="sec-14">Who Can Help</a></li></ol>
+                </div>
+            </details>
+            <div class="tb-search" role="search">
+                <label for="pageSearch" class="sr-only">Search</label>
+                <input type="search" id="pageSearch" class="tb-search-input" placeholder="Search" autocomplete="off">
+                <span class="tb-search-count" aria-live="polite"></span>
+                <button type="button" class="tb-search-nav" data-dir="-1" aria-label="Previous match">&#8593;</button>
+                <button type="button" class="tb-search-nav" data-dir="1" aria-label="Next match">&#8595;</button>
+            </div>
+            <span class="tb-spacer"></span>
+            <button type="button" class="tb-btn tb-primary tb-expand" onclick="expandAll(this)"><i class="fas fa-expand-arrows-alt"></i> Expand all</button>
+            <button type="button" class="tb-btn js-print"><i class="fas fa-print"></i> Print</button>
+        </nav>
+
+
+<div class="info-box">
+                    <h4><i class="fas fa-users"></i> This Guide Is for Everyone</h4>
+                    <p>This guide is for <strong>all students</strong>. It covers:</p>
+                    <ul class="list-styled">
+                        <li>pressure to send nudes, including from a partner;</li>
+                        <li>nudes shared without consent, and fake or AI-made nudes;</li>
+                        <li><strong>sextortion</strong>: someone threatening to share sexual images unless you pay or send more;</li>
+                        <li>other <strong>online blackmail</strong>, such as threats to share an old post or video;</li>
+                        <li>what to do if you're sent someone else's image, or a friend needs help.</li>
+                    </ul>
+                    <p style="margin-top:8px;"><strong>If it's happening to you, it is not your fault, and you won't be in trouble for asking for help.</strong></p>
+                </div><div class="critical-box">
+                    <h4><i class="fas fa-life-ring"></i> Need Help Now?</h4>
+                    <ul class="list-styled"><li><strong>Tell an adult you trust</strong>: a teacher, your tutor, a house parent or anyone at school you feel safe with.</li><li>If someone has threatened you or someone else, <strong>tell an adult straight away</strong>.</li><li>Being threatened or blackmailed? <strong>Don't pay, don't send anything more</strong>, stop replying, and tell an adult now, even late at night.</li><li>If someone is in danger right now, <strong>call 999</strong>.</li><li><strong>Childline</strong>: <a href="tel:08001111">0800 1111</a>, free, any time.</li></ul>
+                </div>
+        <div class="respond-section" id="sec-1">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #1E293B 0%, #334155 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-book"></i></span>
+                    <span>Key Words</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="stat-grid"><div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Nudes</div><div class="stat-label">Nude or semi-nude photos, videos or livestreams. The term covers images someone takes of themselves, images others take, and altered or AI-made ones.</div></div><div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Image-based abuse</div><div class="stat-label">Sharing, or threatening to share, someone's intimate image without their consent.</div></div><div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Sextortion</div><div class="stat-label">Blackmail using sexual images, usually for money. Often run by organised criminals posing as young people.</div></div><div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Deepfake</div><div class="stat-label">A fake image or video made or edited with AI to look real. The harm is real even when the image isn't.</div></div><div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Consent</div><div class="stat-label">A free choice, made without pressure, threats or fear. Agreeing to send an image to one person is not agreeing to it being shared.</div></div></div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-2">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #9F1239 0%, #BE123C 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-chart-bar"></i></span>
+                    <span>What the Data Shows</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="stat-grid"><div class="stat-tile"><div class="stat-value">397</div><div class="stat-label">sextortion reports actioned by the IWF in 2025, across all its reporting routes, up 127% on 2024</div><div class="stat-source"><a href="https://www.iwf.org.uk/annual-data-insights-report-2025/emerging-and-persistent-harms/sexually-coerced-extortion/" target="_blank" rel="noopener">IWF, 2025</a></div></div><div class="stat-tile"><div class="stat-value">92%</div><div class="stat-label">of the IWF's sextortion reports over the last three years (a wider group than the 2025 figure) involved boys</div><div class="stat-source"><a href="https://www.iwf.org.uk/annual-data-insights-report-2025/emerging-and-persistent-harms/sexually-coerced-extortion/" target="_blank" rel="noopener">IWF, 2025</a></div></div><div class="stat-tile"><div class="stat-value">1,894</div><div class="stat-label">reports to Report Remove from UK under-18s in 2025</div><div class="stat-source"><a href="https://www.iwf.org.uk/annual-data-insights-report-2025/executive-summary/" target="_blank" rel="noopener">IWF, 2025</a></div></div></div><p class="stat-note">IWF figures count reports it dealt with, not every young person affected. Checked September 2026.</p><p style="margin-top:10px;"><strong>Sources: check them yourself</strong></p><ul class="list-styled source-list"><li><a href="https://www.iwf.org.uk/annual-data-insights-report-2025/emerging-and-persistent-harms/sexually-coerced-extortion/" target="_blank" rel="noopener">Internet Watch Foundation, <em>Annual Data and Insights Report 2025: sexually coerced extortion</em></a></li><li><a href="https://www.iwf.org.uk/annual-data-insights-report-2025/executive-summary/" target="_blank" rel="noopener">Internet Watch Foundation, <em>Annual Data and Insights Report 2025: executive summary</em></a></li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-3">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #475569 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-gavel"></i></span>
+                    <span>What the Law Says</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="warning-box">
+                    <h4><i class="fas fa-scale-balanced"></i> England and Wales</h4>
+                    <ul class="list-styled"><li>Making, keeping or sharing an indecent image of anyone under 18 is a crime, even an image of yourself, and even if it is AI-made or edited (<a href="https://www.legislation.gov.uk/ukpga/1978/37/section/1" target="_blank" rel="noopener">Protection of Children Act 1978</a>; <a href="https://www.legislation.gov.uk/ukpga/1988/33/section/160" target="_blank" rel="noopener">Criminal Justice Act 1988</a>).</li><li>Sharing someone's intimate image without consent, or <strong>threatening</strong> to share one, is a crime, whatever their age (<a href="https://www.legislation.gov.uk/ukpga/2003/42/section/66B" target="_blank" rel="noopener">Sexual Offences Act 2003, section 66B</a>).</li><li>Demanding money with threats can be blackmail (<a href="https://www.legislation.gov.uk/ukpga/1968/60/section/21" target="_blank" rel="noopener">Theft Act 1968</a>).</li><li>Criminal responsibility starts at 10. The police and courts decide whether a crime has happened, not you, and not school staff.</li></ul><p style="margin-top:8px;"><strong>The law is there to protect young people, not to criminalise them.</strong> If an image of you has been shared, you will not be in trouble for asking for help, at school or with the police. The police focus on keeping young people safe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-4">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #881337 0%, #9F1239 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-hand"></i></span>
+                    <span>Pressure and Consent</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<ul class="list-styled"><li>You never owe anyone an image, including a partner. Asking again and again, guilt-tripping, sending one first to make you feel you should, or offering money or gifts, are all pressure.</li><li>Agreeing to send an image to one person doesn't mean agreeing to it being shared. If it is shared, the person who shared it is responsible.</li><li>Be wary of new contacts who move fast to sexual chat, or ask to move to a private app. Offenders often pose as young people or use hacked accounts.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-5">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #1E293B 0%, #334155 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-shield-heart"></i></span>
+                    <span>If a Nude of You Has Been Shared</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="success-box">
+                    <h4><i class="fas fa-list-check"></i> What to Do</h4>
+                    <ul class="list-styled"><li><strong>Tell a trusted adult.</strong> They won't ask you to show them your images, and won't copy or share them. You're not in trouble.</li><li><strong>Keep the messages. Don't delete them.</strong> You don't need to save or screenshot anything: an adult can help. If you need to block someone now to feel safe, do it, and tell an adult anyway.</li><li><strong>Use Report Remove</strong> to try to get it taken down (see <em>Getting Images Taken Down</em>). If you posted it yourself, delete it from your accounts and cloud backups.</li><li><strong>Don't confront</strong> the people sharing it, or try to get it back. That's the adults' job.</li></ul>
+                </div><p>Fake or AI-made nudes of you are abuse too. You don't have to prove they're fake: tell an adult.</p>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-6">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #9F1239 0%, #BE123C 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-life-ring"></i></span>
+                    <span>Sextortion and Online Blackmail</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="critical-box">
+                    <h4><i class="fas fa-triangle-exclamation"></i> If Someone Is Threatening You</h4>
+                    <ul class="list-styled"><li>The threat might be to share a nude (real or fake), a video, or an old post, unless you pay, send more, or do something for them, such as letting them use your bank account.</li><li><strong>Don't pay, and don't send anything more.</strong> There's no guarantee it stops; once you've paid, they usually ask for more.</li><li><strong>Stop all contact and block them.</strong> Don't delete the messages or your account: deactivate it if you need to.</li><li><strong>Tell a trusted adult now.</strong> You can also report to the police (<a href="tel:101">101</a>, or <a href="tel:999">999</a> in an emergency) or to <a href="https://www.ceop.police.uk/Safety-Centre/" target="_blank" rel="noopener">CEOP</a>.</li><li>Sextortion is usually run by organised criminals targeting many young people at once. <strong>It is not your fault, and you are not alone.</strong></li><li>If you're thinking about hurting yourself, talk to someone today: a trusted adult, <strong>Childline</strong> on <a href="tel:08001111">0800 1111</a>, text SHOUT to <a href="sms:85258">85258</a>, or Samaritans on <a href="tel:116123">116 123</a>. If you're in danger, call 999.</li></ul>
+                </div><p class="stat-note">Advice from the <a href="https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/kidnap-and-extortion/sextortion" target="_blank" rel="noopener">National Crime Agency</a>.</p>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-7">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #475569 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-inbox"></i></span>
+                    <span>If You're Sent Someone Else's Image</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<ul class="list-styled"><li><strong>Don't forward, show, screenshot or save it.</strong> Every share harms the person again, and keeping or sharing an image of an under-18 is a crime.</li><li><strong>Tell a trusted adult.</strong> They'll advise you what to do next, including about deleting it. You're not in trouble for receiving something you didn't ask for.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-8">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #881337 0%, #9F1239 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-flag"></i></span>
+                    <span>Getting Images Taken Down</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<ul class="list-styled"><li><strong>Report Remove</strong> (<a href="https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/report-remove/" target="_blank" rel="noopener">childline.org.uk</a>): if you're under 18, report a nude of yourself and try to get it taken down. You need a Childline account, and Childline can support you.</li><li><strong>Take It Down</strong> (<a href="https://takeitdown.ncmec.org" target="_blank" rel="noopener">takeitdown.ncmec.org</a>): creates a digital fingerprint so some apps can block a nude of you, even before it's shared. The image stays on your phone. It doesn't work on encrypted apps.</li><li><strong>CEOP</strong> (<a href="https://www.ceop.police.uk/Safety-Centre/" target="_blank" rel="noopener">ceop.police.uk</a>): report sexual blackmail, grooming or online sexual abuse to the National Crime Agency. Not for bullying or hacked accounts. In danger? Call 999.</li><li>Report on the platform itself too. A trusted adult can help with all of these.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-9">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #1E293B 0%, #334155 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-hands-helping"></i></span>
+                    <span>RESPOND: If It's Happening to Someone Else</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<p style="margin-bottom:10px;">Image-based abuse spreads through bystanders. <strong>You lead the relational steps</strong>, <strong>Pause is the bridge</strong>, and <strong>adults lead the systems steps</strong>.</p><div class="cluster-head" style="background:#1E3D6F; color:#fff;">Relational: You Lead (R, E, S)</div><div class="step-card" style="--c:#24457B;">
+                    <div class="step-top"><div class="step-letter">R</div><div><div class="step-name">Recognise</div><div class="step-sub">Notice what's happening.</div></div></div>
+                    <ul class="list-styled"><li>Use the 4 Ps: <strong>People</strong> (who's targeted?), <strong>Places</strong> (where is it spilling over?), <strong>Platforms</strong> (which chats?), <strong>Patterns</strong> (is it spreading, or turning into threats?)</li></ul>
+                </div><div class="step-card" style="--c:#1E5947;">
+                    <div class="step-top"><div class="step-letter">E</div><div><div class="step-name">Engage</div><div class="step-sub">Reach out privately.</div></div></div>
+                    <ul class="list-styled"><li>&quot;I saw what's going round. Are you OK? It's not your fault.&quot;</li><li><strong>If it is safe to do so</strong>, the best options are usually to <strong>Delegate</strong> (tell a trusted adult), <strong>Distract</strong> (change the subject, or get your friend away from the group) and <strong>Delay</strong> (check in with them afterwards). Saying &quot;Don't share that&quot; directly is an option only if it won't make you a target</li></ul>
+                </div><div class="step-card" style="--c:#C27D56;">
+                    <div class="step-top"><div class="step-letter">S</div><div><div class="step-name">Support</div><div class="step-sub">Stay close.</div></div></div>
+                    <ul class="list-styled"><li>&quot;I'm here. We can talk to someone together.&quot; Keep including them</li></ul>
+                </div><div class="cluster-head" style="background:#F0B126; color:#1e293b;">The Bridge: Pause (P)</div><div class="step-card" style="--c:#D13529;">
+                    <div class="step-top"><div class="step-letter">P</div><div><div class="step-name">Pause</div><div class="step-sub">Think before you act.</div></div></div>
+                    <ul class="list-styled"><li><strong>Risk</strong> (is anyone being threatened?), <strong>Rights</strong> (what does your friend need?), <strong>Resources</strong> (who can help?)</li><li><strong>Don't open, share, screenshot or comment on the image</strong>, even to defend someone. You're not expected to investigate or collect evidence</li></ul>
+                </div><div class="cluster-head" style="background:#D13529; color:#fff;">Systems: Adults Lead (O, N, D)</div><div class="step-card" style="--c:#F0B126;">
+                    <div class="step-top"><div class="step-letter">O</div><div><div class="step-name">Offer</div><div class="step-sub">Model alternatives. Signpost help.</div></div></div>
+                    <ul class="list-styled"><li>Show a different way: don't share it, say it's not OK if you safely can, and point your friend to Report Remove and a trusted adult</li></ul>
+                </div><div class="step-card" style="--c:#2E81CF;">
+                    <div class="step-top"><div class="step-letter">N</div><div><div class="step-name">Notify</div><div class="step-sub">Tell a trusted adult.</div></div></div>
+                    <ul class="list-styled"><li><strong>Threats and blackmail: tell an adult straight away</strong>. It isn't snitching</li></ul>
+                </div><div class="step-card" style="--c:#8424E8;">
+                    <div class="step-top"><div class="step-letter">D</div><div><div class="step-name">Document</div><div class="step-sub">Adults record it.</div></div></div>
+                    <ul class="list-styled"><li>The adult makes the record. Tell them what you know, and where</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-10">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #9F1239 0%, #BE123C 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-route"></i></span>
+                    <span>What Happens When You Tell</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="info-box">
+                    <h4><i class="fas fa-route"></i> What Happens When You Tell</h4>
+                    <ul class="list-styled"><li><strong>It starts with a person you trust. Behind them is a system:</strong> a safeguarding team, records and procedures that make sure what you tell one person reaches the people who can help. The person is why young people tell; the system is why telling works.</li><li>You'll be listened to and taken seriously.</li><li>They won't ask you to show them your images, and won't copy or share them. The safeguarding team makes a plan to keep you safe, and helps get images taken down.</li><li>The adult will pass it to the safeguarding team. They won't promise to keep it secret, and they'll tell you what they are doing.</li><li>The law allows schools to share information needed to keep a young person safe without asking for consent, and from 30 September 2026 a new legal duty requires many safeguarding organisations to share it. What is shared must be relevant and proportionate, go only to the people who need it, and be handled in line with data protection law. Because your consent isn't the legal basis, they won't ask for it as if it were. They should tell you what they are sharing, with whom and why, unless that would put someone at risk, and listen to what you think. Agreeing to support, such as counselling, is a separate choice, and your views matter there.</li><li>You'll have as much say as possible in the plan and the support you get.</li></ul>
+                </div><ul class="list-styled"><li>Parents or carers are usually told, and the school will talk with you about how. If home isn't safe, tell the adult: they'll think carefully about how, and whether, your family is told.</li><li>The police may be involved, especially for threats or blackmail. Their focus is keeping you safe.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-11">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #475569 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-lightbulb"></i></span>
+                    <span>If You've Been Part of It</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<p>Forwarding an image, making a fake one, pressuring someone, or threatening to share something causes serious harm, and can be a crime.</p>
+                <ul class="list-styled"><li>Stop, don't share it further, and talk to an adult you trust. Owning it early is better than being found out.</li><li><strong>Shore (Lucy Faithfull Foundation)</strong>: anonymous advice for teenagers worried about their own sexual behaviour online or offline, including sharing nudes, at <a href="https://shorespace.org.uk/" target="_blank" rel="noopener">shorespace.org.uk</a>.</li><li><strong>Childline</strong> (<a href="tel:08001111">0800 1111</a>) is there for you too.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-12">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #881337 0%, #9F1239 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-circle-question"></i></span>
+                    <span>Myths and Facts</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="myth-grid"><div class="mh">Myth</div><div class="mh">Fact</div><div class="myth">"If I pay, it'll stop"</div><div class="fact">Paying rarely ends it; they usually ask for more. Don't pay: get help.</div><div class="myth">"I'll be in trouble with the police"</div><div class="fact">The law is there to protect young people, and asking for help is always the right thing to do. The school's first concern is your safety: you'll be supported, not blamed. If the police become involved, they decide about any offences, and school will support you through it.</div><div class="myth">"They sent it, so it's their fault"</div><div class="fact">Sending an image to one person isn't consent to share it. The person who shares it is responsible.</div><div class="myth">"It's fake, so it's harmless"</div><div class="fact">Deepfake nudes cause real harm, and making or sharing them can be a crime.</div><div class="myth">"Nothing can be done once it's online"</div><div class="fact">Report Remove and Take It Down can help get images removed or blocked.</div></div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-13">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #1E293B 0%, #334155 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-bed"></i></span>
+                    <span>If You Board</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<ul class="list-styled"><li><strong>You can always contact your house parents, the DSL or a member of the boarding management team, at any time, day or night.</strong></li><li>If something happens at night, tell the house parent on duty straight away, even late. You don't have to wait until morning.</li><li>Your boarding school has an independent person you can talk to who isn't a member of staff.</li><li>You can always contact your family privately.</li></ul>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-14">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #9F1239 0%, #BE123C 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-phone"></i></span>
+                    <span>Who Can Help</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="success-box">
+                    <h4><i class="fas fa-school"></i> At School</h4>
+                    <ul class="list-styled"><li>Any adult you trust: your tutor or advisor, your head of year, a teacher, a coach, a house parent if you board, or a school counsellor</li></ul><ul class="list-styled contact-list"><li><strong>The Designated Safeguarding Lead (DSL)</strong> and deputy DSLs: the staff whose job is to keep students safe. Their names are usually on the school website, in the safeguarding policy and on posters around school.</li><li>The school nurse or health centre, and the school counsellor</li></ul>
+                </div><div class="info-box">
+                    <h4><i class="fas fa-globe"></i> Outside School</h4>
+                    <ul class="list-styled"><li><strong>Childline (for anyone under 19)</strong>: <a href="tel:08001111">0800 1111</a>, free and confidential; call any time, day or night, or use 1-2-1 chat at <a href="https://childline.org.uk" target="_blank" rel="noopener">childline.org.uk</a> (you may have to wait for a chat counsellor, so calling is usually quickest). <strong>If you're under 18, start here.</strong></li><li><strong>Shout</strong>: text <strong>SHOUT</strong> to <a href="sms:85258">85258</a>, free, confidential, 24/7</li><li><strong>Samaritans</strong>: <a href="tel:116123">116 123</a>, free, any time, day or night</li><li><strong>Police</strong>: <a href="tel:999">999</a> if someone is in immediate danger; <a href="tel:101">101</a> to report sextortion or blackmail that is not an emergency</li></ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-buttons" style="margin-top: 40px; justify-content: center;">
+            <button type="button" id="printButton" class="btn print-btn js-print"><i class="fas fa-print"></i> Print</button>
+        </div>
+        <p class="print-hint" style="text-align:center; font-size:0.9em; color:var(--text-light); margin-top:-15px;"><strong>Print</strong> opens a printable copy in a new tab. Choose <strong>Save as PDF</strong> to keep a copy. If nothing opens, press Ctrl+P (Windows) or Cmd+P (Mac).</p>
+
+        <footer>
+            <p><strong>RESPOND</strong> Safeguarding Framework Student Guides</p>
+            <p>Nudes, Pressure and Threats Online: What to Do: Student Guide 10 - 14 to 18</p>
+            <p>© 2026/27 | <strong>RESPOND</strong> Safeguarding Framework</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Contacts and figures checked September 2026 | Next review: September 2027</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                header.classList.add('collapsed');
+            } else {
+                content.classList.add('show');
+                header.classList.remove('collapsed');
+            }
+        }
+
+        function expandAll(btn) {
+            const allSections = document.querySelectorAll('.respond-content');
+            const allHeaders = document.querySelectorAll('.respond-header');
+            btn = btn.closest ? btn.closest('button') : btn;
+            
+            if (btn.textContent.includes('Expand')) {
+                allSections.forEach(section => section.classList.add('show'));
+                allHeaders.forEach(header => header.classList.remove('collapsed'));
+                btn.textContent = btn.classList.contains('tb-expand') ? 'Collapse all' : 'Collapse All Sections';
+            } else {
+                allSections.forEach(section => section.classList.remove('show'));
+                allHeaders.forEach(header => header.classList.add('collapsed'));
+                btn.textContent = btn.classList.contains('tb-expand') ? 'Expand all' : 'Expand All Sections';
+            }
+        }
+
+        function toggleAccordion(header) {
+            const body = header.nextElementSibling;
+            const icon = header.querySelector('span');
+            
+            if (body.classList.contains('open')) {
+                body.classList.remove('open');
+                icon.textContent = '▼';
+            } else {
+                body.classList.add('open');
+                icon.textContent = '▲';
+            }
+        }
+
+        function expandEverything() {
+            document.querySelectorAll('.respond-content').forEach(el => el.classList.add('show'));
+            document.querySelectorAll('.respond-header').forEach(el => el.classList.remove('collapsed'));
+            document.querySelectorAll('.accordion-body').forEach(el => el.classList.add('open'));
+            document.querySelectorAll('.accordion-header > span:last-child').forEach(el => el.textContent = '▲');
+            document.querySelectorAll('details').forEach(d => d.open = true);
+        }
+
+        // Any browser print (including Ctrl+P / Cmd+P) prints the full content
+        window.addEventListener('beforeprint', expandEverything);
+
+        function printScenario() {
+            expandEverything();
+            // Build a standalone copy that prints itself. Needed because Google Sites
+            // embeds cannot print their own content directly.
+            let opened = null;
+            try {
+                document.documentElement.setAttribute('data-printable', '1');
+                const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                document.documentElement.removeAttribute('data-printable');
+                const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
+                opened = window.open(url, '_blank');
+            } catch (err) {
+                opened = null;
+            }
+            if (!opened) {
+                setTimeout(function () {
+                    alert('All sections are now expanded.\n\nA printable copy could not be opened (pop-ups may be blocked).\n\nPress Ctrl+P (Windows) or Cmd+P (Mac), and choose "Save as PDF" to keep a copy.');
+                }, 200);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.documentElement.getAttribute('data-printable') === '1') {
+                expandEverything();
+                setTimeout(function () { window.print(); }, 600);
+                return;
+            }
+            document.querySelectorAll('.js-print').forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    printScenario();
+                });
+            });
+        });
+
+        // All sections start collapsed
+    
+        document.addEventListener('click', function (e) {
+            const a = e.target.closest('.toc-link');
+            if (!a) return;
+            e.preventDefault();
+            const el = document.getElementById(a.getAttribute('data-target'));
+            if (!el) return;
+            const header = el.classList.contains('respond-section') ? el.querySelector('.respond-header') : null;
+            if (header && header.classList.contains('collapsed')) toggleSection(header);
+            setTimeout(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
+        });
+
+        (function () {
+            function closeDrops(except) {
+                document.querySelectorAll('.top-toolbar details.tb-drop[open]').forEach(function (d) { if (d !== except) d.removeAttribute('open'); });
+            }
+            document.querySelectorAll('.top-toolbar details.tb-drop').forEach(function (d) {
+                d.addEventListener('toggle', function () { if (d.open) closeDrops(d); });
+            });
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.top-toolbar')) closeDrops(null);
+                if (e.target.closest('.tb-panel .toc-link')) closeDrops(null);
+            });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrops(null); });
+        })();
+
+        (function () {
+            var input = document.getElementById('pageSearch');
+            if (!input) return;
+            var countEl = document.querySelector('.tb-search-count');
+            var hits = [], current = -1, timer = null;
+            var bubble = document.createElement('div');
+            bubble.className = 'srch-bubble'; bubble.setAttribute('role', 'group'); bubble.setAttribute('aria-label', 'Search results');
+            bubble.innerHTML = '<span class="sb-count"></span><button type="button" data-d="-1" aria-label="Previous match">&#8593;</button><button type="button" data-d="1" aria-label="Next match">&#8595;</button><button type="button" class="sb-close" aria-label="Close search">&#10005;</button>';
+            document.body.appendChild(bubble);
+            function placeBubble() {
+                if (current < 0 || !hits[current]) bubble.classList.remove('show'); else bubble.classList.add('show');
+            }
+            bubble.addEventListener('click', function (e) {
+                var b = e.target.closest('button'); if (!b) return;
+                if (b.classList.contains('sb-close')) { input.value = ''; clearHits(); return; }
+                go(current + parseInt(b.getAttribute('data-d'), 10));
+            });
+            function clearHits() {
+                document.querySelectorAll('mark.srch-hit').forEach(function (m) {
+                    var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); p.normalize();
+                });
+                hits = []; current = -1; countEl.textContent = '';
+                if (typeof bubble !== 'undefined') bubble.classList.remove('show');
+            }
+            function reveal(el) {
+                var c = el.closest('.respond-content');
+                if (c && !c.classList.contains('show')) { var h = c.previousElementSibling; if (h) toggleSection(h); }
+                var a = el.closest('.accordion-body');
+                if (a && !a.classList.contains('open')) { var ah = a.previousElementSibling; if (ah) toggleAccordion(ah); }
+                var d = el.closest('details');
+                while (d) { if (!d.classList.contains('tb-drop')) d.open = true; d = d.parentElement ? d.parentElement.closest('details') : null; }
+            }
+            function go(i) {
+                if (!hits.length) return;
+                if (current >= 0 && hits[current]) hits[current].classList.remove('srch-current');
+                current = (i + hits.length) % hits.length;
+                var m = hits[current]; m.classList.add('srch-current'); reveal(m);
+                countEl.textContent = (current + 1) + ' of ' + hits.length;
+                bubble.querySelector('.sb-count').textContent = (current + 1) + ' of ' + hits.length;
+                placeBubble();
+                setTimeout(function () { m.scrollIntoView({ behavior: 'auto', block: 'center' }); }, 30);
+            }
+            function run() {
+                clearHits();
+                var q = input.value.trim();
+                if (q.length < 2) return;
+                var esc = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                var re = new RegExp(esc, 'gi'), reTest = new RegExp(esc, 'i');
+                var root = document.querySelector('.container');
+                var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+                    acceptNode: function (n) {
+                        var p = n.parentElement;
+                        if (!p || p.closest('script, style, .top-toolbar, mark.srch-hit')) return NodeFilter.FILTER_REJECT;
+                        return reTest.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+                    }
+                });
+                var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+                nodes.forEach(function (n) {
+                    if (hits.length > 500) return;
+                    var text = n.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+                    re.lastIndex = 0;
+                    while ((m = re.exec(text)) !== null) {
+                        frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+                        var mk = document.createElement('mark'); mk.className = 'srch-hit'; mk.textContent = m[0];
+                        frag.appendChild(mk); hits.push(mk); last = m.index + m[0].length;
+                        if (m[0].length === 0) re.lastIndex++;
+                    }
+                    frag.appendChild(document.createTextNode(text.slice(last)));
+                    n.parentNode.replaceChild(frag, n);
+                });
+                if (!hits.length) { countEl.textContent = 'No matches'; bubble.classList.remove('show'); return; }
+                go(0);
+            }
+            input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 300); });
+            input.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') { e.preventDefault(); if (hits.length) go(current + (e.shiftKey ? -1 : 1)); else run(); }
+                if (e.key === 'Escape') { input.value = ''; clearHits(); }
+            });
+            document.querySelectorAll('.tb-search-nav').forEach(function (b) {
+                b.addEventListener('click', function () { if (!hits.length) run(); else go(current + parseInt(b.getAttribute('data-dir'), 10)); });
+            });
+            window.addEventListener('beforeprint', clearHits);
+        })();
+
+        (function () {
+            var root = document.getElementById('helixDemo');
+            if (!root) return;
+            var STEPS = [["R", "Recognise", "#24457B"], ["E", "Engage", "#1E5947"], ["S", "Support", "#C27D56"], ["P", "Pause", "#D13529"], ["O", "Offer", "#F0B126"], ["N", "Notify", "#2E81CF"], ["D", "Document", "#8424E8"]], MODES = {"sequence": {"type": "sequence", "tab": "Sequence", "intro": "How RESPOND is taught.", "frames": [{"label": "The seven steps", "t": "RESPOND is taught in this order, Recognise to Document, because sequence gives structure under pressure. Recognise, Engage and Support are the relational steps; Pause is the bridge; Offer, Notify and Document are the systems steps."}, {"label": "But practice is not a line", "t": "In practice a concern rarely moves in a straight line. You may loop back, hold at a step, or go straight to Notify. Choose one of the examples to see how the steps move."}]}, "boy": {"type": "walk", "tab": "Boy displaying misogyny", "centre": "the students", "intro": "A Year 10 boy whose misogynistic comments escalate over a term. He is a child too: the helix wraps around him and the girls affected.", "frames": [{"p": 0, "s": 0, "label": "Turn 1: a comment in class", "t": "In a lesson, a Year 10 boy says women \"shouldn't be in charge\" and that girls who disagree are \"hysterical\". Some classmates laugh. Recognise: it is aimed at the girls in the room, and one is visibly uncomfortable."}, {"p": 0, "s": 1, "label": "Turn 1", "t": "Engage: Direct, calmly, if it is safe to do so: \"That's not how we talk about people here.\" Later, privately, TED: \"Tell me where you've heard that.\""}, {"p": 0, "s": 2, "label": "Turn 1", "t": "Support: check in briefly with the girls affected. Connection before correction applies to him as well."}, {"p": 0, "s": 3, "label": "Turn 1", "t": "Pause: Three Lenses. Low risk for now, but it echoes content he may be watching online. Do not get drawn into a debate about the ideology."}, {"p": 0, "s": 5, "k": "jump", "label": "Turn 1", "t": "Notify: pass it to the DSL as soon as is practicably possible, through the school's usual system. Offer can wait for this turn."}, {"p": 0, "s": 6, "label": "Turn 1", "t": "Document: GOLD, with his exact words and who heard them. This record is what lets the next turn begin higher up."}, {"p": 1, "s": 0, "label": "Turn 2: a named girl (two weeks later)", "t": "A girl tells her tutor he has been commenting on girls' bodies in a group chat and calling her names. Because the lesson was recorded, the DSL can link the two. Recognise: this is now sexual harassment, with a named girl affected."}, {"p": 1, "s": 2, "label": "Turn 2", "t": "Support her first: believe her, safety first, and ask what would help her feel safe in lessons and at break."}, {"p": 1, "s": 3, "label": "Turn 2", "t": "Pause: Three Lenses. Her safety and wellbeing; his rights and needs as a child too. Do not investigate or ask to see the chat."}, {"p": 1, "s": 5, "k": "jump", "label": "Turn 2: N before O", "t": "Notify: the DSL, today. The DSL decides the response under the school's child-on-child abuse procedures. If in doubt, N before O."}, {"p": 1, "s": 4, "k": "loop", "label": "Turn 2", "t": "Offer, once the DSL has decided: education and consequences for him; support, and a say in what happens next, for her. Model the alternative: respect is expected, not optional."}, {"p": 1, "s": 1, "k": "loop", "label": "Turn 2: loop back", "t": "Loop back to Engage with him. The relationship still matters: name the behaviour, not the boy, and keep the door open."}, {"p": 1, "s": 6, "label": "Turn 2", "t": "Document: GOLD for each conversation, recorded separately for each student."}, {"p": 2, "s": 0, "label": "Turn 3: risk", "t": "He shares an image of a girl in his year that has been altered to look sexual. Recognise: this is a child protection matter."}, {"p": 2, "s": 5, "k": "jump", "label": "Turn 3: straight to Notify", "t": "Go straight from Recognise to Notify: tell the DSL immediately. Do not view, copy, forward or delete the image."}, {"p": 2, "s": 2, "k": "loop", "label": "Turn 3", "t": "Support: the girl may not know yet. The DSL decides how and when she and her parents are told, and what support she needs."}, {"p": 2, "s": 6, "label": "Turn 3", "t": "Document: GOLD, as soon as is practicably possible. Describe what you were told, never the image itself."}]}, "girl": {"type": "walk", "tab": "Girl experiencing misogyny", "centre": "her", "intro": "A Year 9 girl on the receiving end of misogyny, over a term. Each turn is higher: the same steps, at greater urgency.", "frames": [{"p": 0, "s": 0, "label": "Turn 1: \"just banter\"", "t": "A Year 9 girl laughs off being called \"a 6 out of 10\" by boys at break: \"it's just banter\". Recognise: many girls say this happens so often it is not worth reporting."}, {"p": 0, "s": 1, "label": "Turn 1", "t": "Engage: TED. \"Tell me what happens at break.\" Don't minimise it, and don't push her."}, {"p": 0, "s": 2, "label": "Turn 1", "t": "Support: tell her it isn't OK and it isn't her fault, and that she can come back to you at any time."}, {"p": 0, "s": 5, "k": "jump", "label": "Turn 1", "t": "Notify: pass it to the DSL, even though she says she's fine. Patterns are only visible when things are passed on."}, {"p": 0, "s": 6, "label": "Turn 1", "t": "Document: GOLD, with her exact words."}, {"p": 1, "s": 0, "label": "Turn 2: a pattern (three weeks later)", "t": "Her PE teacher notices she has stopped changing for PE and sits alone. Because the first comment was recorded, the DSL can see the link."}, {"p": 1, "s": 1, "label": "Turn 2", "t": "Engage: a trusted adult checks in privately. She says boys have been rating girls' bodies in the corridor outside the changing rooms."}, {"p": 1, "s": 0, "k": "loop", "label": "Turn 2: loop back", "t": "Loop back to Recognise: new information changes the picture. This is sexual harassment, and it is affecting her."}, {"p": 1, "s": 2, "label": "Turn 2", "t": "Support: safety first. Ask what would help: another place to change, a trusted adult, a plan for break times."}, {"p": 1, "s": 3, "label": "Turn 2", "t": "Pause: Three Lenses. Her rights include a say in what happens next, but you cannot promise to keep it secret."}, {"p": 1, "s": 5, "k": "jump", "label": "Turn 2: N before O", "t": "Notify before Offer: the DSL, as soon as is practicably possible."}, {"p": 1, "s": 4, "k": "loop", "label": "Turn 2", "t": "Offer, once the DSL has decided: work out with her what support she wants and what she would like to happen. Model the alternative: she should not have to change her life to avoid them."}, {"p": 1, "s": 6, "label": "Turn 2", "t": "Document: GOLD, with dates and what each adult has noticed."}, {"p": 2, "s": 0, "label": "Turn 3: disclosure", "t": "Weeks later she tells you a boy has been pressuring her to send nude images and says he will spread a rumour if she doesn't."}, {"p": 2, "s": 1, "label": "Turn 3", "t": "Engage: listen, and use the disclosure script: \"I believe you, and I'm taking what you've told me seriously. This is not your fault. I'm going to help keep you safe, and I'll explain what happens next.\""}, {"p": 2, "s": 5, "k": "jump", "label": "Turn 3: straight to Notify", "t": "Go straight to Notify: the DSL, immediately. Do not ask to see any messages or images."}, {"p": 2, "s": 2, "k": "loop", "label": "Turn 3", "t": "Support: stay with her while help comes, and be honest that you have to pass this on."}, {"p": 2, "s": 6, "label": "Turn 3", "t": "Document: GOLD, her exact words, as soon as is practicably possible."}]}, "wider": {"type": "wider", "tab": "Wider spiral", "centre": "the students involved", "intro": "One incident, several people at once: a Year 10 group chat rating girls. Each strand is its own spiral.", "strands": [["The girls rated", "#C27D56"], ["The boys who posted", "#1E5947"], ["The chat and bystanders", "#2E81CF"]], "frames": [{"at": [0, 0, 0], "label": "Three strands", "t": "A girl tells you boys in a Year 10 group chat are rating girls in the year. A single-child concern traces a tight spiral; this one is wider: the girls rated, the boys who posted, and everyone else in the chat."}, {"at": [2, 1, 0], "label": "At the same time", "t": "Support the girls who have been rated, while engaging the boys who posted. The chat is still being recognised: is it active, and who else is in it?"}, {"at": [3, 3, 5], "label": "At the same time", "t": "Pause for each person. The chat goes straight to the DSL: do not view, screenshot, forward or save anything."}, {"at": [5, 5, 6], "label": "Joined up", "t": "Notify: one joined-up picture to the DSL, who coordinates the response and any contact with parents or other agencies."}, {"at": [6, 4, 4], "label": "Different speeds", "t": "The strands move at different speeds. Education and consequences for the boys follow the DSL's decisions; bystanders are shown how to speak up next time, if it is safe to do so. Every strand ends in Document."}]}, "breakdown": {"type": "breakdown", "tab": "When it breaks", "centre": "her", "intro": "The same Year 9 girl, when steps are skipped.", "frames": [{"p": 0, "s": 0, "label": "Turn 1", "t": "The same girl laughs off being rated at break. Recognise happens."}, {"p": 0, "s": 1, "x": [3], "label": "Pause skipped", "t": "The adult agrees it is \"just banter\" and moves on. Pause is skipped: the adult reacts to how she presents, not to what is happening."}, {"p": 0, "s": 1, "x": [3, 6], "label": "Document skipped", "t": "Nothing is recorded. When her PE teacher later notices she has stopped changing, there is nothing to connect it to. The pattern stays invisible."}, {"p": 0, "s": 1, "x": [3, 5, 6], "label": "Notify skipped", "t": "The concern stays with one adult. Professionals working in isolation, and information not being shared, are recurring findings in serious case reviews."}, {"p": 0, "s": 1, "x": [3, 5, 6], "burst": true, "label": "The helix fragments", "t": "The structure that should wrap around her falls apart. She learns that telling changes nothing, and stops telling. That is how harm escalates unseen."}, {"p": 0, "s": 1, "restore": true, "label": "Put it back together", "t": "Every step taken puts the structure back. Relational is why children tell; systemic is why telling works."}]}};
+            function TY() { return MODES[mode].type; }
+            var cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var mode = "boy", frame = 0, playing = null, narrow = false;
+            var yaw = -0.5, tilt = 0.42, userTilt = 0.42, dragging = false, lastX = 0, lastY = 0, idleUntil = 0;
+            var zoom = 1, tZoom = 1, panX = 0, panY = 0, tPanX = 0, tPanY = 0, engaged = false, hits = [], pinned = null;
+            var ptrs = {}, pinchD = 0, moved = 0;
+            var DESC = ['4 Ps Context Scan: People, Places, Platforms, Patterns. Notice single indicators and emerging patterns.',
+                'TED questions (Tell me, Explain, Describe), never \u201cwhy\u201d. If you witness it, the 4Ds, if it is safe to do so.',
+                'Safety first. Practical and emotional help. Connection before correction.',
+                '90-second grounding, then Three Lenses: Risk, Rights, Resources. Do not investigate or promise confidentiality.',
+                'Model alternatives. Proportionate options, never coerced. If in doubt, N before O.',
+                'Tell the DSL as soon as is practicably possible. The DSL decides on external referrals.',
+                'GOLD: Ground, Observe, Language, Do. As soon as is practicably possible.'];
+            var TURN = 0.95, RAD = 1.55;
+            var nodes = [];
+            for (var p = 0; p < 3; p++) for (var s = 0; s < 7; s++) nodes.push({ p: p, s: s, x: 0, y: 0, z: 0, a: 0, tx: 0, ty: 0, tz: 0, ta: 1, crack: 0, tcrack: 0 });
+            function helixPos(p, s, r, phase) {
+                var ang = (s / 7) * Math.PI * 2 + (phase || 0);
+                return { x: Math.cos(ang) * r, z: Math.sin(ang) * r, y: (p + s / 7) * TURN - 1.45 * TURN };
+            }
+            function seed(i) { var x = Math.sin(i * 12.9898) * 43758.5453; return x - Math.floor(x); }
+            function setTargets() {
+                var m = MODES[mode], f = m.frames[frame];
+                nodes.forEach(function (n, i) {
+                    var hp = helixPos(n.p, n.s, RAD);
+                    n.tx = hp.x; n.ty = hp.y; n.tz = hp.z; n.ta = 1; n.tcrack = 0;
+                    if (TY() === 'sequence') {
+                        if (n.p === 1) { if (narrow) { n.tx = 0.2; n.ty = 1.95 - n.s * 0.65; } else { n.tx = -2.4 + n.s * 0.8; n.ty = 0; } n.tz = 0; n.ta = 1; }
+                        else { n.ta = 0; n.tx = hp.x * 0.2 + (-2.4 + n.s * 0.8) * 0.8; n.ty = 0; n.tz = 0; }
+                    } else if (TY() === 'wider') {
+                        n.ta = 0;
+                    } else if (TY() === 'breakdown') {
+                        n.ta = n.p === 0 ? 1 : 0.35;
+                        if (f.x && f.x.indexOf(n.s) >= 0) n.tcrack = 1;
+                        if (f.burst) {
+                            var ang = (n.s / 7) * Math.PI * 2 + (seed(i) - 0.5) * 0.9, r = 1.9 + seed(i + 7) * 0.9;
+                            n.tx = Math.cos(ang) * r; n.tz = Math.sin(ang) * r; n.ty = hp.y - 0.6 - seed(i + 3) * 1.1; n.ta = 0.35; n.tcrack = 1;
+                        }
+                    }
+                });
+            }
+            function project(x, y, z, W, Hh) {
+                var cx = Math.cos(yaw), sx = Math.sin(yaw);
+                var x1 = x * cx - z * sx, z1 = x * sx + z * cx;
+                var ct = Math.cos(tilt), st = Math.sin(tilt);
+                var y1 = y * ct - z1 * st, z2 = y * st + z1 * ct;
+                var d = 7, k = d / (d + z2), sc = Math.min(W / (W < 520 ? 5.2 : 7.4), Hh / 4.7) * zoom;
+                return { x: W / 2 + panX + x1 * sc * k, y: Hh / 2 + panY - y1 * sc * k, k: k * Math.sqrt(zoom), z: z2 };
+            }
+            function size() {
+                var r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+                if (cv.width !== Math.round(r.width * dpr) || cv.height !== Math.round(r.height * dpr)) { cv.width = Math.round(r.width * dpr); cv.height = Math.round(r.height * dpr); }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                return { W: r.width, H: r.height };
+            }
+            function nodeAt(p, s) { return nodes[p * 7 + s]; }
+            function arrow(a, b, col, w, dash) {
+                ctx.save(); ctx.strokeStyle = col; ctx.lineWidth = w; ctx.setLineDash(dash || []);
+                var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2 - (dash ? 26 : 0);
+                ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.quadraticCurveTo(mx, my, b.x, b.y); ctx.stroke();
+                ctx.setLineDash([]);
+                var ang = Math.atan2(b.y - my, b.x - mx), L = 9 + w;
+                var ex = b.x - Math.cos(ang) * 13, ey = b.y - Math.sin(ang) * 13;
+                ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(ex, ey);
+                ctx.lineTo(ex - L * Math.cos(ang - 0.45), ey - L * Math.sin(ang - 0.45));
+                ctx.lineTo(ex - L * Math.cos(ang + 0.45), ey - L * Math.sin(ang + 0.45)); ctx.closePath(); ctx.fill();
+                ctx.restore();
+            }
+            function drawChild(W, Hh, y, alone, t, label) {
+                var c = project(0, y, 0, W, Hh), r = 9 * c.k;
+                if (alone) { ctx.fillStyle = 'rgba(209,53,41,' + (0.12 + 0.08 * Math.sin(t / 300)) + ')'; ctx.beginPath(); ctx.arc(c.x, c.y, r * 3.2, 0, Math.PI * 2); ctx.fill(); }
+                ctx.fillStyle = '#334155';
+                ctx.beginPath(); ctx.arc(c.x, c.y - r * 1.1, r * 0.55, 0, Math.PI * 2); ctx.fill();
+                ctx.beginPath(); ctx.moveTo(c.x - r * 0.75, c.y + r * 0.9); ctx.quadraticCurveTo(c.x, c.y - r * 0.9, c.x + r * 0.75, c.y + r * 0.9); ctx.closePath(); ctx.fill();
+                ctx.font = '600 12px system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = alone ? '#B42318' : '#475569';
+                ctx.fillText(label || (alone ? 'the child, alone' : 'the child'), c.x, c.y + r * 2.4);
+            }
+            function draw(t) {
+                var d = size(), W = d.W, Hh = d.H, m = MODES[mode], f = m.frames[frame];
+                if ((W < 520) !== narrow) { narrow = W < 520; render(); }
+                ctx.clearRect(0, 0, W, Hh);
+                nodes.forEach(function (n) {
+                    var e = reduce ? 1 : 0.12;
+                    n.x += (n.tx - n.x) * e; n.y += (n.ty - n.y) * e; n.z += (n.tz - n.z) * e; n.a += (n.ta - n.a) * e; n.crack += (n.tcrack - n.crack) * e;
+                });
+                var i, a, b;
+                // backbone
+                if (TY() !== 'sequence') {
+                    var strands = TY() === 'wider' ? [[0, 1.1, '#C27D56'], [0, 1.75, '#1E5947'], [0, 2.4, '#2E81CF']] : [[0, RAD, '#94A3B8']];
+                    strands.forEach(function (st) {
+                        var prev = null;
+                        var i0 = TY() === 'wider' ? 70 : 0, i1 = TY() === 'wider' ? 140 : 210;
+                        for (i = i0; i <= i1; i++) {
+                            var u = i / 10, hp = helixPos(Math.floor(u / 7), u % 7, st[1], st[0]);
+                            if (TY() === 'wider') hp.y = (u - 10.5) / 7 * TURN * 0.8;
+                            if (TY() === 'breakdown' && f.burst) { hp.y -= 0.25 * Math.sin(i * 1.7); }
+                            var q = project(hp.x, hp.y, hp.z, W, Hh);
+                            if (prev && !(TY() === 'breakdown' && f.burst && i % 6 < 3)) {
+                                ctx.strokeStyle = st[2]; ctx.globalAlpha = (TY() === 'wider' ? 0.55 : 0.35) * Math.max(0.25, Math.min(1, (q.k - 0.72) * 2.6));
+                                ctx.lineWidth = TY() === 'wider' ? 2.2 : 1.6; ctx.beginPath(); ctx.moveTo(prev.x, prev.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+                            }
+                            prev = q;
+                        }
+                    });
+                    ctx.globalAlpha = 1;
+                    // turn labels on the axis
+                    if (TY() === 'walk' && W >= 520) ['Turn 1', 'Turn 2', 'Turn 3'].forEach(function (lab, p) {
+                        var q = project(0, helixPos(p, 3.5, RAD).y, 0, W, Hh);
+                        ctx.font = '700 12px system-ui, sans-serif'; ctx.fillStyle = p === f.p ? '#1E3D6F' : '#94A3B8'; ctx.textAlign = 'left'; ctx.fillText(lab, 14, q.y);
+                    });
+                }
+                // child on the axis
+                if (TY() === 'walk') drawChild(W, Hh, helixPos(f.p, f.s, RAD).y, false, t, MODES[mode].centre);
+                else if (TY() === 'breakdown') drawChild(W, Hh, helixPos(0, 3, RAD).y, !!f.burst, t, f.burst ? MODES[mode].centre + ', alone' : MODES[mode].centre);
+                else if (TY() === 'wider') drawChild(W, Hh, 0, false, t, MODES[mode].centre);
+                // path taken so far
+                if (TY() === 'walk' || TY() === 'breakdown') {
+                    var fr = m.frames;
+                    for (i = 1; i <= frame; i++) {
+                        if (TY() === 'breakdown' && (fr[i].burst || fr[i].restore || fr[i].x)) break;
+                        if (fr[i].p === fr[i - 1].p && fr[i].s === fr[i - 1].s) continue;
+                        a = nodeAt(fr[i - 1].p, fr[i - 1].s); b = nodeAt(fr[i].p, fr[i].s);
+                        var pa = project(a.x, a.y, a.z, W, Hh), pb = project(b.x, b.y, b.z, W, Hh);
+                        var k = fr[i].k, cur = i === frame;
+                        ctx.globalAlpha = (TY() === 'walk' && fr[i].p !== fr[frame].p) ? 0.28 : 1;
+                        if (k === 'jump') arrow(pa, pb, '#2E81CF', cur ? 4 : 3);
+                        else if (k === 'loop') arrow(pa, pb, '#475569', cur ? 3 : 2, [6, 5]);
+                        else arrow(pa, pb, '#1E293B', cur ? 3 : 2);
+                    }
+                    ctx.globalAlpha = 1;
+                }
+                // nodes, back to front
+                var list = [];
+                nodes.forEach(function (n) { if (n.a > 0.02) { var q = project(n.x, n.y, n.z, W, Hh); list.push({ n: n, q: q }); } });
+                if (TY() === 'wider') {
+                    [0, 1, 2].forEach(function (si) {
+                        var rr = [1.1, 1.75, 2.4][si];
+                        for (var s = 0; s < 7; s++) {
+                            var hp = helixPos(1, s, rr, 0); hp.y = (s - 3.5) / 7 * TURN * 0.8;
+                            var q = project(hp.x, hp.y, hp.z, W, Hh);
+                            list.push({ w: true, si: si, p: 1, s: s, q: q, on: f.at[si] === s });
+                        }
+                    });
+                }
+                list.sort(function (u, v) { return v.q.z - u.q.z; });
+                hits = [];
+                list.forEach(function (it) {
+                    var q = it.q, st, r, alpha, isCur = false, cracked = 0;
+                    if (it.w) {
+                        st = STEPS[it.s]; r = (it.on ? 16 : 10) * q.k * (W < 520 ? 0.75 : 1); alpha = it.on ? 1 : 0.35;
+                        isCur = it.on;
+                    } else {
+                        var n = it.n; st = STEPS[n.s]; alpha = n.a; cracked = n.crack;
+                        var nb = W < 520 ? 0.72 : 1; r = (TY() === 'sequence' ? 22 : 13) * q.k * nb;
+                        if ((TY() === 'walk' || TY() === 'breakdown') && n.p === f.p && n.s === f.s && !f.burst) { isCur = true; r *= 1.35; }
+                        if (TY() === 'walk') { var seen = MODES[mode].frames.slice(0, frame + 1).some(function (g) { return g.p === n.p && g.s === n.s; }); if (!seen) alpha *= 0.3; else if (n.p !== f.p) alpha *= 0.55; }
+                    }
+                    if (alpha > 0.15) hits.push({ x: q.x, y: q.y, r: Math.max(r, 8), s: it.w ? it.s : it.n.s, p: it.w ? null : it.n.p, si: it.w ? it.si : null, cracked: cracked > 0.5 });
+                    ctx.globalAlpha = alpha;
+                    if (isCur && !reduce) { ctx.strokeStyle = st[2]; ctx.lineWidth = 2; ctx.globalAlpha = alpha * (0.35 + 0.25 * Math.sin(t / 260)); ctx.beginPath(); ctx.arc(q.x, q.y, r + 7 + 2 * Math.sin(t / 260), 0, Math.PI * 2); ctx.stroke(); ctx.globalAlpha = alpha; }
+                    ctx.fillStyle = cracked > 0.5 ? '#CBD5E1' : st[2];
+                    ctx.beginPath(); ctx.arc(q.x, q.y, r, 0, Math.PI * 2); ctx.fill();
+                    ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.stroke();
+                    if (r > 7) {
+                        ctx.fillStyle = cracked > 0.5 ? '#64748B' : (st[0] === 'O' ? '#1E293B' : '#fff');
+                        ctx.font = '700 ' + Math.round(r * 0.95) + 'px system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+                        ctx.fillText(st[0], q.x, q.y + 0.5); ctx.textBaseline = 'alphabetic';
+                    }
+                    if (cracked > 0.5) {
+                        ctx.strokeStyle = '#D13529'; ctx.lineWidth = 3; ctx.beginPath();
+                        ctx.moveTo(q.x - r, q.y - r); ctx.lineTo(q.x + r, q.y + r); ctx.moveTo(q.x + r, q.y - r); ctx.lineTo(q.x - r, q.y + r); ctx.stroke();
+                    }
+                    if (TY() === 'sequence' && !it.w && it.n.p === 1 && alpha > 0.5) {
+                        ctx.fillStyle = '#1E293B'; ctx.font = '600 12px system-ui, sans-serif';
+                        if (narrow) { ctx.textAlign = 'left'; ctx.fillText(st[1], q.x + r + 8, q.y + 4); }
+                        else { ctx.textAlign = 'center'; ctx.fillText(st[1], q.x, q.y + r + 16); }
+                    }
+                    ctx.globalAlpha = 1;
+                });
+                if (TY() === 'sequence' && narrow) {
+                    [[0, 2, 'Relational'], [3, 3, 'Bridge'], [4, 6, 'Systems']].forEach(function (g) {
+                        var a1 = project(-0.55, 1.95 - g[0] * 0.65 + 0.25, 0, W, Hh), b1 = project(-0.55, 1.95 - g[1] * 0.65 - 0.25, 0, W, Hh);
+                        ctx.strokeStyle = '#94A3B8'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(a1.x + 6, a1.y); ctx.lineTo(a1.x, a1.y); ctx.lineTo(b1.x, b1.y); ctx.lineTo(b1.x + 6, b1.y); ctx.stroke();
+                        ctx.fillStyle = '#475569'; ctx.font = '600 11px system-ui, sans-serif'; ctx.textAlign = 'right'; ctx.fillText(g[2], a1.x - 6, (a1.y + b1.y) / 2 + 4);
+                    });
+                    if (frame === 1) { var n1 = project(2.55, -1.95, 0, W, Hh), n2 = project(2.55, 1.95, 0, W, Hh); arrow(n1, n2, '#475569', 2, [6, 5]); }
+                } else if (TY() === 'sequence') {
+                    [[0, 2, 'Relational'], [3, 3, 'Bridge'], [4, 6, 'Systems']].forEach(function (g) {
+                        var a1 = project(-2.4 + g[0] * 0.8 - 0.3, -0.62, 0, W, Hh), b1 = project(-2.4 + g[1] * 0.8 + 0.3, -0.62, 0, W, Hh);
+                        ctx.strokeStyle = '#94A3B8'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(a1.x, a1.y - 6); ctx.lineTo(a1.x, a1.y); ctx.lineTo(b1.x, b1.y); ctx.lineTo(b1.x, b1.y - 6); ctx.stroke();
+                        ctx.fillStyle = '#475569'; ctx.font = '600 12px system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillText(g[2], (a1.x + b1.x) / 2, a1.y + 16);
+                    });
+                    if (frame === 1) { var s1 = project(-2.4, 0.55, 0, W, Hh), s2 = project(2.4, 0.55, 0, W, Hh); arrow(s2, s1, '#475569', 2, [6, 5]); }
+                }
+            }
+            function loop(t) {
+                if (TY() === 'sequence') { var tw = Math.round(yaw / (Math.PI * 2)) * Math.PI * 2; yaw += (tw - yaw) * (reduce ? 1 : 0.08); tilt += (0 - tilt) * (reduce ? 1 : 0.08); }
+                else { tilt += (userTilt - tilt) * (reduce ? 1 : 0.2); if (!dragging && !reduce && t > idleUntil && !pinned) yaw += 0.0022; }
+                var ez = reduce ? 1 : 0.2; zoom += (tZoom - zoom) * ez; panX += (tPanX - panX) * ez; panY += (tPanY - panY) * ez;
+                draw(t || 0);
+                requestAnimationFrame(loop);
+            }
+            var introEl = root.querySelector('.hx-intro'), chip = root.querySelector('.hx-chip'), where = root.querySelector('.hx-where'),
+                textEl = root.querySelector('.hx-text'), countEl = root.querySelector('.hx-count'), legend = root.querySelector('.hx-legend'),
+                playBtn = root.querySelector('.hx-play');
+            function render() {
+                var m = MODES[mode], f = m.frames[frame];
+                introEl.textContent = m.intro;
+                where.textContent = f.label;
+                textEl.textContent = f.t;
+                countEl.textContent = (frame + 1) + (narrow ? '/' : ' of ') + m.frames.length;
+                if (f.s !== undefined && (TY() === 'walk' || (TY() === 'breakdown' && frame === 0))) { var st = STEPS[f.s]; chip.textContent = st[1]; chip.style.background = st[0] === 'O' ? '#B9850F' : st[2]; }
+                else chip.textContent = '';
+                if (TY() === 'walk') legend.innerHTML = '<span><i></i> next step</span><span><i class="dash"></i> loop back</span><span><i style="border-color:#2E81CF;border-top-width:4px"></i> jump ahead</span>';
+                else if (TY() === 'wider') legend.innerHTML = m.strands.map(function (s) { return '<span><i class="sw" style="background:' + s[1] + '"></i> ' + s[0] + '</span>'; }).join('');
+                else if (TY() === 'breakdown') legend.innerHTML = '<span><i class="sw" style="background:#CBD5E1;outline:2px solid #D13529"></i> step skipped</span>';
+                else legend.innerHTML = '';
+                root.querySelectorAll('.hx-tab').forEach(function (b) { b.setAttribute('aria-selected', b.getAttribute('data-mode') === mode ? 'true' : 'false'); });
+                root.querySelector('.hx-prev').disabled = frame === 0;
+                root.querySelector('.hx-next').disabled = frame === m.frames.length - 1;
+                setTargets();
+            }
+            function stop() { if (playing) { clearInterval(playing); playing = null; playBtn.innerHTML = '&#9654; Play'; playBtn.setAttribute('aria-label', 'Play'); } }
+            function go(i) { var n = MODES[mode].frames.length; frame = Math.max(0, Math.min(n - 1, i)); render(); }
+            root.querySelector('.hx-prev').addEventListener('click', function () { stop(); go(frame - 1); });
+            root.querySelector('.hx-next').addEventListener('click', function () { stop(); go(frame + 1); });
+            playBtn.addEventListener('click', function () {
+                if (playing) { stop(); return; }
+                if (frame === MODES[mode].frames.length - 1) go(0);
+                playBtn.innerHTML = '&#10074;&#10074; Pause'; playBtn.setAttribute('aria-label', 'Pause');
+                playing = setInterval(function () { if (frame >= MODES[mode].frames.length - 1) stop(); else go(frame + 1); }, 5200);
+            });
+            root.querySelectorAll('.hx-tab').forEach(function (b) {
+                b.addEventListener('click', function () { stop(); mode = b.getAttribute('data-mode'); frame = 0; pinned = null; tip.style.display = 'none'; render(); });
+            });
+            var stage = root.querySelector('.hx-stage'), tip = root.querySelector('.hx-tip'), hint = root.querySelector('.hx-hint');
+            function clampZoom(z) { return Math.max(0.6, Math.min(3.2, z)); }
+            function setZoom(z, cx, cy) {
+                z = clampZoom(z);
+                if (cx !== undefined) { var r = cv.getBoundingClientRect(), ox = cx - r.width / 2, oy = cy - r.height / 2, f = z / tZoom; tPanX = ox - (ox - tPanX) * f; tPanY = oy - (oy - tPanY) * f; }
+                tZoom = z; if (tZoom <= 1.001) { tPanX *= 0.5; tPanY *= 0.5; }
+            }
+            function resetView() { tZoom = 1; tPanX = 0; tPanY = 0; userTilt = 0.42; yaw = -0.5; pinned = null; tip.style.display = 'none'; }
+            function hitAt(x, y) { for (var i = hits.length - 1; i >= 0; i--) { var h = hits[i]; if ((x - h.x) * (x - h.x) + (y - h.y) * (y - h.y) <= (h.r + 4) * (h.r + 4)) return h; } return null; }
+            function showTip(h, x, y) {
+                if (!h) { tip.style.display = 'none'; return; }
+                var st = STEPS[h.s], head = st[1];
+                if (h.si !== null && MODES[mode].strands && MODES[mode].strands[h.si]) head = MODES[mode].strands && MODES[mode].strands[h.si][0] + ': ' + st[1];
+                else if (TY() === 'walk' && h.p !== null) head = 'Turn ' + (h.p + 1) + ': ' + st[1];
+                tip.innerHTML = '<b style="color:' + (st[0] === 'O' ? '#F0B126' : '#fff') + '">' + head + (h.cracked ? ' (skipped)' : '') + '</b>' + DESC[h.s];
+                tip.style.display = 'block';
+                var W = stage.clientWidth, tw = tip.offsetWidth, th = tip.offsetHeight;
+                var lx = Math.min(W - tw - 8, Math.max(8, x + 14)), ly = y - th - 12; if (ly < 6) ly = y + 18;
+                tip.style.left = lx + 'px'; tip.style.top = ly + 'px';
+            }
+            function local(e) { var r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+            cv.addEventListener('pointerdown', function (e) {
+                ptrs[e.pointerId] = { x: e.clientX, y: e.clientY }; engaged = true; moved = 0;
+                var ids = Object.keys(ptrs);
+                if (ids.length === 2) { var a = ptrs[ids[0]], b = ptrs[ids[1]]; pinchD = Math.hypot(a.x - b.x, a.y - b.y); }
+                dragging = true; lastX = e.clientX; lastY = e.clientY; cv.setPointerCapture(e.pointerId);
+                if (hint) hint.style.opacity = '0';
+            });
+            cv.addEventListener('pointermove', function (e) {
+                var L = local(e);
+                if (!dragging) { if (!pinned) { var h = hitAt(L.x, L.y); showTip(h, L.x, L.y); cv.style.cursor = h ? 'pointer' : ''; } return; }
+                if (!ptrs[e.pointerId]) return;
+                ptrs[e.pointerId] = { x: e.clientX, y: e.clientY };
+                var ids = Object.keys(ptrs);
+                if (ids.length === 2) {
+                    var a = ptrs[ids[0]], b = ptrs[ids[1]], d = Math.hypot(a.x - b.x, a.y - b.y);
+                    if (pinchD) setZoom(tZoom * d / pinchD); pinchD = d; moved += 10; return;
+                }
+                var dx = e.clientX - lastX, dy = e.clientY - lastY; moved += Math.abs(dx) + Math.abs(dy);
+                if (e.shiftKey || e.buttons === 4 || e.buttons === 2) { tPanX += dx; tPanY += dy; panX = tPanX; panY = tPanY; }
+                else { yaw += dx * 0.01; if (TY() !== 'sequence') userTilt = Math.max(-0.1, Math.min(1.35, userTilt + dy * 0.006)); }
+                lastX = e.clientX; lastY = e.clientY;
+            });
+            function endDrag(e) {
+                delete ptrs[e.pointerId]; pinchD = 0;
+                if (Object.keys(ptrs).length) return;
+                dragging = false; idleUntil = performance.now() + 4000;
+                if (moved < 6) { var L = local(e), h = hitAt(L.x, L.y); pinned = h; showTip(h, L.x, L.y); }
+            }
+            cv.addEventListener('pointerup', endDrag); cv.addEventListener('pointercancel', endDrag);
+            cv.addEventListener('pointerleave', function () { engaged = false; if (!pinned) tip.style.display = 'none'; });
+            cv.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+            cv.addEventListener('wheel', function (e) {
+                if (!engaged && !e.ctrlKey && document.fullscreenElement !== stage) return;   // let the page scroll until the helix is clicked
+                e.preventDefault(); var L = local(e); setZoom(tZoom * Math.exp(-e.deltaY * 0.0015), L.x, L.y);
+            }, { passive: false });
+            cv.addEventListener('keydown', function (e) {
+                var k = e.key, used = true;
+                if (k === 'ArrowLeft') yaw -= 0.15; else if (k === 'ArrowRight') yaw += 0.15;
+                else if (k === 'ArrowUp') userTilt = Math.min(1.35, userTilt + 0.1); else if (k === 'ArrowDown') userTilt = Math.max(-0.1, userTilt - 0.1);
+                else if (k === '+' || k === '=') setZoom(tZoom * 1.25); else if (k === '-' || k === '_') setZoom(tZoom / 1.25);
+                else if (k === '0') resetView(); else used = false;
+                if (used) { e.preventDefault(); idleUntil = performance.now() + 4000; }
+            });
+            root.querySelector('.hx-zoom').addEventListener('click', function (e) {
+                var b = e.target.closest('button'); if (!b) return; var z = b.getAttribute('data-z');
+                if (z === 'in') setZoom(tZoom * 1.3); else if (z === 'out') setZoom(tZoom / 1.3); else if (z === 'reset') resetView();
+                else if (z === 'full') { if (document.fullscreenElement) document.exitFullscreen(); else if (stage.requestFullscreen) stage.requestFullscreen().catch(function () {}); }
+            });
+            var fsBtn = root.querySelector('[data-z="full"]'); if (!document.fullscreenEnabled) fsBtn.style.display = 'none';
+            window.addEventListener('beforeprint', function () { stop(); mode = "boy"; frame = MODES[mode].frames.length - 1; render(); nodes.forEach(function (n) { n.x = n.tx; n.y = n.ty; n.z = n.tz; n.a = n.ta; n.crack = n.tcrack; }); yaw = -0.5; zoom = tZoom = 1; panX = panY = tPanX = tPanY = 0; tilt = userTilt = 0.42; tip.style.display = 'none'; draw(0); });
+            render();
+            nodes.forEach(function (n) { n.x = n.tx; n.y = n.ty; n.z = n.tz; n.a = n.ta; });
+            requestAnimationFrame(loop);
+        })();
+</script>
+</body>
+</html>
