@@ -1,0 +1,53 @@
+/* RESPOND page icon: separate white masthead, matching the reference guide layout.
+   Kept outside each guide's coloured hero/header. */
+#respond-page-topbar {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 30px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  position: relative;
+  z-index: 10;
+}
+#respond-page-topbar .respond-page-mark {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+#respond-page-topbar .respond-page-mark img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#respond-page-topbar .respond-page-mark:focus-visible {
+  outline: 3px solid #2E81CF;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+@media (max-width: 580px) {
+  #respond-page-topbar { min-height: 56px; padding: 8px 16px; }
+}
+@media print {
+  #respond-page-topbar { display: none; }
+}
