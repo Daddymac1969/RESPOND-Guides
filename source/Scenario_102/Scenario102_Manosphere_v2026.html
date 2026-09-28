@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Guide 102: Online Influence and the Manosphere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #7c3aed;
+            --success: #059669;
+            --warning: #d97706;
+            --error: #dc2626;
+            --info: #0891b2;
+            --recognise: #24457B;
+            --engage: #1E5947;
+            --support: #C27D56;
+            --pause: #D13529;
+            --offer: #F0B126;
+            --notify: #2E81CF;
+            --document: #8424E8;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .respond-dots {
+            display: inline-flex;
+            gap: 4px;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+
+        .respond-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header .scenario-number {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .national-emergency {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #7f1d1d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .national-emergency h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .situation-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .situation-box h2 {
+            color: #92400e;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .situation-box .situation-text {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #78350f;
+            line-height: 1.5;
+        }
+
+        .context-indicators {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .context-indicators h3 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .context-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            border: 2px solid var(--border);
+        }
+
+        .badge.category {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .badge.severity {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-color: var(--error);
+            color: var(--error);
+        }
+
+        .badge.priority {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-color: var(--warning);
+            color: #92400e;
+        }
+
+        .info-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .info-icon {
+            margin-right: 8px;
+            color: var(--info);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .respond-section {
+            background: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .respond-header {
+            padding: 20px 25px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .respond-header:hover {
+            filter: brightness(1.1);
+        }
+
+        .respond-header h2 {
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .respond-letter {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-icon {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .respond-header.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+
+        .respond-content {
+            padding: 30px;
+            display: none;
+        }
+
+        .respond-content.show {
+            display: block;
+        }
+
+        .r-header { background: linear-gradient(135deg, var(--recognise) 0%, #1a2f5a 100%); }
+        .e-header { background: linear-gradient(135deg, var(--engage) 0%, #1a4839 100%); }
+        .s-header { background: linear-gradient(135deg, var(--support) 0%, #9a5f3f 100%); }
+        .p-header { background: linear-gradient(135deg, var(--pause) 0%, #a92a21 100%); }
+        .o-header { background: linear-gradient(135deg, var(--offer) 0%, #b9850f 100%); }
+        .o-header h2 { text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
+        .n-header { background: linear-gradient(135deg, var(--notify) 0%, #1f5f9e 100%); }
+        .d-header { background: linear-gradient(135deg, var(--document) 0%, #6b1ec0 100%); }
+
+        .subsection {
+            margin: 25px 0;
+        }
+
+        .subsection h3 {
+            color: var(--text-dark);
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .subsection h4 {
+            color: var(--text-dark);
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--warning);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .critical-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 4px solid var(--error);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .critical-box h4 {
+            color: #991b1b;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 4px solid var(--success);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .success-box h4 {
+            color: #065f46;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--info);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-box h4 {
+            color: #0c4a6e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .list-styled {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .list-styled li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            margin: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .do-dont-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .do-box {
+            background: #f0fdf4;
+            border: 2px solid var(--success);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .do-box h4 {
+            color: var(--success);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dont-box {
+            background: #fef2f2;
+            border: 2px solid var(--error);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .dont-box h4 {
+            color: var(--error);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quote-box {
+            background: #f8fafc;
+            border-left: 4px solid var(--primary);
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-style: italic;
+            color: var(--text-dark);
+        }
+
+        .accordion {
+            margin: 15px 0;
+        }
+
+        .accordion-header {
+            background: var(--bg-light);
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 2px solid var(--border);
+        }
+
+        .accordion-header:hover {
+            background: #e2e8f0;
+        }
+
+        .accordion-header h4 {
+            margin: 0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+            border: 2px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .accordion-body.open {
+            max-height: 5000px;
+            padding: 20px;
+        }
+
+        .stat-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 10px 0;
+            color: #78350f;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1e3a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: var(--text-light);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-dark);
+        }
+
+        .print-btn {
+            background: var(--success);
+            color: white;
+        }
+
+        .print-btn:hover {
+            background: #047857;
+        }
+
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @page { size: A4; margin: 14mm 12mm; }
+        @media print {
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; box-shadow: none !important; }
+            body {
+                background: white;
+                font-size: 11pt;
+            }
+            .container { max-width: none; padding: 0; }
+            .nav-buttons, .toggle-icon, .action-buttons, .accordion-header > span:last-child, .print-hint {
+                display: none !important;
+            }
+            .accordion-header { border-radius: 8px 8px 0 0; }
+            .quote-box, li, .accordion-header, .stat-highlight { break-inside: avoid; }
+            h2, h3, h4, .respond-header { break-after: avoid; }
+            a { color: inherit; text-decoration: none; }
+            .respond-content {
+                display: block !important;
+                max-height: none !important;
+            }
+            .accordion-body {
+                display: block !important;
+                max-height: none !important;
+                padding: 20px !important;
+            }
+            .respond-section { break-inside: auto; margin-bottom: 14px; }
+            .respond-content { padding: 16px 18px; }
+            .subsection { margin: 14px 0; }
+            .warning-box, .critical-box, .success-box, .info-box, .do-box, .dont-box { margin: 10px 0; padding: 12px 16px; }
+            .national-emergency, .situation-box { padding: 16px 18px; margin-bottom: 14px; }
+            header { padding: 22px 20px; margin-bottom: 14px; }
+            header h1 { font-size: 1.8em; }
+            .respond-header { padding: 10px 16px; }
+            .respond-header h2 { font-size: 1.3em; }
+            .respond-letter { width: 40px; height: 40px; font-size: 1.6em; }
+            .accordion { margin: 8px 0; }
+            .accordion-body.open { padding: 10px 14px !important; }
+            .list-styled li, .checklist li { margin: 3px 0; }
+            header {
+                page-break-after: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .respond-header h2 {
+                font-size: 1.3em;
+            }
+
+            .respond-letter {
+                width: 45px;
+                height: 45px;
+                font-size: 1.8em;
+            }
+
+            .do-dont-container {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .content-warning { background:#FFF7E6; border:2px solid #C27D56; border-left:8px solid #D13529; border-radius:10px; margin-bottom:30px; color:#1e293b; }
+        .content-warning summary { list-style:none; cursor:pointer; padding:18px 25px; display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; position:relative; padding-right:55px; }
+        .content-warning summary::-webkit-details-marker { display:none; }
+        .content-warning summary:focus-visible { outline:3px solid #2E81CF; outline-offset:2px; border-radius:8px; }
+        .cw-title { font-size:1.4em; font-weight:700; color:#9a2a20; display:flex; align-items:center; gap:10px; }
+        .cw-sub { font-size:1em; color:#1e293b; }
+        .cw-toggle { position:absolute; right:22px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#9a2a20; font-size:1.2em; }
+        .content-warning[open] .cw-toggle { transform:translateY(-50%) rotate(0deg); }
+        .cw-body { padding:0 25px 22px 25px; line-height:1.7; }
+        @media print { .content-warning .cw-body { display:block !important; } .cw-toggle { display:none; } }
+
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 10px; }
+        .stat-tile { background: #ffffff; border: 1px solid var(--border); border-top: 4px solid #1E3D6F; border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; break-inside: avoid; }
+        .stat-value { font-size: 2em; font-weight: 700; color: #1E3D6F; line-height: 1.1; }
+        .stat-label { font-size: 0.95em; color: #1e293b; line-height: 1.45; }
+        .stat-source { font-size: 0.78em; color: #64748b; line-height: 1.35; margin-top: auto; padding-top: 6px; border-top: 1px solid var(--border); }
+        .stat-note { font-size: 0.88em; color: #475569; margin-top: 10px; line-height: 1.5; }
+
+        .hbar-chart { margin: 6px 0 4px 0; }
+        .hbar-row { display: grid; grid-template-columns: minmax(180px, 300px) 1fr; gap: 6px 14px; align-items: center; padding: 8px 0; border-bottom: 1px solid #eef2f6; break-inside: avoid; }
+        .hbar-label { font-size: 0.95em; color: #1e293b; text-align: right; }
+        .hbar-bars { display: flex; flex-direction: column; gap: 2px; }
+        .hbar-line { display: flex; align-items: center; gap: 6px; }
+        .hbar-fill { height: 14px; border-radius: 0 4px 4px 0; min-width: 2px; }
+        .hbar-val { font-size: 0.85em; font-weight: 600; color: #1e293b; }
+        .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+        @media (max-width: 600px) { .hbar-row { grid-template-columns: 1fr; } .hbar-label { text-align: left; font-weight: 600; } }
+
+        .respond-key { width: 100%; border-collapse: collapse; font-size: 0.93em; background: #fff; border-radius: 8px; overflow: hidden; }
+        .respond-key th { background: #1E3D6F; color: #fff; text-align: left; padding: 8px 10px; font-weight: 600; }
+        .respond-key td { padding: 8px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+        .k-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+        .tagline { font-style: italic; font-weight: 600; color: #1E3D6F; margin: 10px 0; }
+
+        .source-list li { font-size: 0.9em; }
+        .source-list a, .stat-source a, .stat-note a { color: #1E3D6F; text-decoration: underline; }
+        .place { display: inline-block; font-size: 0.8em; font-weight: 700; padding: 2px 9px; border-radius: 10px; color: #fff; white-space: nowrap; }
+        .place-a { background: #1E5947; } .place-b { background: #9a6b12; } .place-c { background: #2E81CF; } .place-d { background: #D13529; }
+        .age-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0; }
+        .age-col { background: #fff; border: 1px solid var(--border); border-top: 5px solid #1E3D6F; border-radius: 8px; padding: 12px 14px; }
+        .age-col h4 { margin: 0 0 6px 0; color: #1E3D6F; }
+        .age-col .age-tag { font-size: 0.85em; font-weight: 600; color: #475569; margin-bottom: 6px; }
+        .shape-row { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 8px; align-items: stretch; margin: 12px 0; }
+        .shape-row .shape { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+        .shape-row .shape b { display: block; color: #1E3D6F; margin-bottom: 4px; }
+        .shape-row .arrow { display: flex; align-items: center; color: #94a3b8; font-size: 1.4em; }
+        .fake-post { max-width: 460px; margin: 12px auto; background: #0f172a; color: #f8fafc; border-radius: 14px; padding: 16px 18px; font-size: 0.95em; line-height: 1.5; }
+        .fake-post .fp-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+        .fake-post .fp-av { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg,#64748b,#334155); flex-shrink: 0; }
+        .fake-post .fp-name { font-weight: 700; } .fake-post .fp-meta { font-size: 0.8em; color: #94a3b8; }
+        .fake-post p { margin: 6px 0; }
+        .fake-label { text-align: center; font-size: 0.85em; color: #475569; font-style: italic; }
+        .noise-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 12px 0; }
+        .noise-grid > div { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+        .noise-grid .nl { font-size: 1.8em; font-weight: 800; color: #1E3D6F; line-height: 1; }
+        .noise-grid .nw { font-weight: 700; margin: 4px 0; }
+        .noise-grid .nq { font-size: 0.88em; color: #475569; }
+        @media (max-width: 760px) {
+            .age-cols, .noise-grid { grid-template-columns: 1fr; }
+            .shape-row { grid-template-columns: 1fr; } .shape-row .arrow { justify-content: center; transform: rotate(90deg); }
+        }
+        @media print { .source-list a, .stat-source a, .stat-note a { text-decoration: none; } .age-col, .noise-grid > div, .shape { break-inside: avoid; } .noise-grid { grid-template-columns: repeat(5, 1fr) !important; } .age-cols { grid-template-columns: repeat(3, 1fr) !important; } .shape-row { grid-template-columns: 1fr auto 1fr auto 1fr !important; } .shape-row .arrow { transform: none !important; } }
+        .action-buttons a.btn, .nav-buttons a.btn { text-align: center; justify-content: center; text-decoration: none; }
+        .guide-panel { background:#fff; border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:0 0 24px 0; }
+        .guide-panel h3 { margin:0 0 4px 0; color:#1E3D6F; }
+        .guide-panel > p { margin:0 0 12px 0; color:#475569; font-size:0.95em; }
+        .guide-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+        .guide-card { border-radius:10px; padding:14px 16px; color:#fff; display:flex; flex-direction:column; gap:6px; }
+        .guide-card .gc-top { font-weight:700; font-size:1.02em; }
+        .guide-card .gc-title { font-size:0.9em; opacity:0.92; flex:1; }
+        .guide-card .gc-who { font-size:0.85em; font-weight:600; }
+        .guide-card .gc-links { display:flex; gap:8px; margin-top:6px; flex-wrap:wrap; }
+        .guide-card .gc-links a { background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.45); color:#fff; text-decoration:none; padding:6px 12px; border-radius:6px; font-weight:600; font-size:0.9em; }
+        .guide-card .gc-links a:hover { background:rgba(255,255,255,0.28); }
+        @media (max-width:760px) { .guide-grid { grid-template-columns:1fr; } }
+        @media print { .guide-grid { grid-template-columns:repeat(3,1fr) !important; } .guide-card { break-inside:avoid; } }
+        .guide-panel > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding-right:30px; position:relative; }
+        .guide-panel > summary::-webkit-details-marker { display:none; }
+        .guide-panel .gp-title { font-weight:700; font-size:1.1em; color:#1E3D6F; }
+        .guide-panel .gp-sub { color:#475569; font-size:0.95em; }
+        .guide-panel .gp-toggle { position:absolute; right:4px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#1E3D6F; }
+        .guide-panel[open] .gp-toggle { transform:translateY(-50%) rotate(0deg); }
+        .guide-panel[open] > summary { margin-bottom:10px; }
+        .guide-panel { background:#EAF1FB !important; border:1px solid #9DB6DA !important; border-left:8px solid #1E3D6F !important; }
+        .age-chip { display:inline-block; background:#F5C842; color:#0F1644; font-weight:700; font-size:0.95em; padding:4px 14px; border-radius:999px; margin-bottom:12px; }
+        .screen-only {}
+        @media print { .screen-only { display:none !important; } .hbar-chart { break-inside: avoid; } footer { break-inside: avoid; } }
+        .contents-panel { background:#F1F5F9; border:1px solid #CBD5E1; border-left:8px solid #334155; border-radius:12px; padding:18px 20px; margin:0 0 24px 0; }
+        .contents-panel > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding-right:30px; position:relative; }
+        .contents-panel > summary::-webkit-details-marker { display:none; }
+        .contents-panel .cp-title { font-weight:700; font-size:1.1em; color:#1E293B; }
+        .contents-panel .cp-sub { color:#475569; font-size:0.95em; }
+        .contents-panel .cp-toggle { position:absolute; right:4px; top:50%; transform:translateY(-50%) rotate(-90deg); transition:transform 0.3s ease; color:#334155; }
+        .contents-panel[open] .cp-toggle { transform:translateY(-50%) rotate(0deg); }
+        .contents-panel ol { columns:2; column-gap:32px; margin:12px 0 0 0; padding-left:24px; }
+        .contents-panel li { break-inside:avoid; margin:4px 0; }
+        .contents-panel a { color:#1E3D6F; text-decoration:none; font-weight:600; }
+        .contents-panel a:hover { text-decoration:underline; }
+        @media (max-width:760px) { .contents-panel ol { columns:1; } }
+        @media print { .contents-panel { display:none !important; } }
+        .step-card .step-name { color: var(--c); }
+        .step-card[style*="#F0B126"] .step-name { color: #B9850F; }
+        .content-warning { margin-bottom:14px !important; }
+        .content-warning summary { padding:12px 20px !important; padding-right:48px !important; }
+        .cw-title { font-size:1.12em !important; }
+        .cw-sub { font-size:0.93em !important; }
+        .top-toolbar { position:relative; display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:#fff; border:1px solid var(--border); border-radius:12px; padding:8px; margin:0 0 26px 0; box-shadow:0 1px 3px rgba(15,23,42,0.06); }
+        .top-toolbar .tb-spacer { flex:1; }
+        .tb-btn { display:inline-flex; align-items:center; gap:8px; background:#EAF1FB; color:#1E293B; border:1px solid #B8CCE8; border-radius:8px; padding:8px 14px; font:inherit; font-size:0.95em; font-weight:600; cursor:pointer; text-decoration:none; line-height:1.2; }
+        .tb-btn:hover { background:#DCE8F8; }
+        .tb-btn:focus-visible { outline:3px solid #2E81CF; outline-offset:2px; }
+        .tb-btn.tb-primary { background:#1E3D6F; border-color:#1E3D6F; color:#fff; }
+        .tb-btn.tb-primary:hover { background:#16305A; }
+        .tb-drop { position:static; }
+        .tb-drop > summary { list-style:none; }
+        .tb-drop > summary::-webkit-details-marker { display:none; }
+        .tb-drop > summary .tb-caret { font-size:0.75em; transition:transform 0.2s ease; }
+        .tb-drop[open] > summary { background:#D3E2F6; border-color:#1E3D6F; }
+        .tb-drop[open] > summary .tb-caret { transform:rotate(180deg); }
+        .tb-panel { position:absolute; left:0; right:0; top:calc(100% + 6px); z-index:60; background:#fff; border:1px solid #CBD5E1; border-radius:12px; box-shadow:0 12px 32px rgba(15,23,42,0.18); padding:16px 18px; max-height:70vh; overflow:auto; }
+        .tb-panel .tb-note { margin:0 0 10px 0; color:#475569; font-size:0.92em; }
+        .tb-panel ol { columns:2; column-gap:32px; margin:0; padding-left:24px; }
+        .tb-panel li { break-inside:avoid; margin:4px 0; }
+        .tb-panel a.toc-link { color:#1E3D6F; text-decoration:none; font-weight:600; }
+        .tb-panel a.toc-link:hover { text-decoration:underline; }
+        @media (max-width:760px) {
+            .top-toolbar .tb-spacer { display:none; }
+            .top-toolbar { gap:6px; padding:6px; }
+            .tb-btn { font-size:0.88em; padding:8px 8px; white-space:nowrap; }
+            .top-toolbar > .tb-drop { flex:1 1 calc(50% - 6px); min-width:0; }
+            .top-toolbar > .tb-btn { flex:1 1 calc(33% - 6px); }
+            .top-toolbar > .tb-drop > summary { width:100%; justify-content:center; box-sizing:border-box; }
+            .top-toolbar > .tb-btn { justify-content:center; }
+            .tb-panel ol { columns:1; }
+        }
+        @media print { .top-toolbar { display:none !important; } }
+        .tb-search { display:flex; align-items:center; gap:4px; flex:1 1 260px; max-width:420px; background:#EAF1FB; border:1px solid #B8CCE8; border-radius:8px; padding:2px 4px 2px 10px; }
+        .tb-search:focus-within { outline:3px solid #2E81CF; outline-offset:1px; }
+        .tb-search-input { flex:1; min-width:0; border:none; background:transparent; font:inherit; font-size:0.95em; padding:6px 2px; color:#1E293B; outline:none; }
+        .tb-search-count { font-size:0.82em; color:#475569; white-space:nowrap; }
+        .tb-search-nav { border:none; background:transparent; cursor:pointer; font-size:1em; padding:4px 6px; border-radius:6px; color:#1E3D6F; }
+        .tb-search-nav:hover { background:#DCE8F8; }
+        mark.srch-hit { background:#FDE68A; color:inherit; padding:0 1px; border-radius:2px; }
+        mark.srch-hit.srch-current { background:#F59E0B; box-shadow:0 0 0 2px #B45309; }
+        @media (max-width:760px) { .tb-search { flex:1 1 100%; max-width:none; order:-1; } }
+        @media print { mark.srch-hit { background:none !important; box-shadow:none !important; } }
+        @media (min-width:761px) { .top-toolbar { position:sticky; top:8px; z-index:70; } }
+        .srch-bubble { position:fixed; left:50%; bottom:14px; transform:translateX(-50%); z-index:90; display:none; align-items:center; gap:2px; background:#1E293B; color:#fff; border-radius:999px; padding:6px 8px 6px 16px; box-shadow:0 6px 18px rgba(15,23,42,0.3); font-size:0.95em; }
+        .srch-bubble button { border:none; background:transparent; color:#fff; cursor:pointer; font-size:1.1em; padding:6px 10px; border-radius:999px; line-height:1; }
+        .srch-bubble button:hover, .srch-bubble button:focus-visible { background:rgba(255,255,255,0.18); outline:none; }
+        .srch-bubble .sb-count { margin-right:6px; white-space:nowrap; }
+        @media (max-width:760px) { .srch-bubble.show { display:inline-flex; } }
+        @media print { .srch-bubble { display:none !important; } }
+        .ops-emergency { background:#FEF2F2; border:2px solid #D13529; border-radius:12px; padding:12px 16px; margin:0 0 18px 0; color:#7F1D1D; }
+        .ops-emergency p { margin:0; line-height:1.55; }
+        .ops-emergency a.toc-link { color:#7F1D1D; font-weight:700; text-decoration:underline; }
+        .ops-contacts td { height:2.2em; }
+        .ops-contacts td:first-child { width:45%; font-weight:600; }
+        @media print { .ops-emergency, .ops-contacts { break-inside:avoid; } }
+    </style>
+<link rel="icon" type="image/png" sizes="any" href="../../favicons/R_Staff_102.png">
+<link rel="stylesheet" href="../../assets/page-icon-header.css">
+</head>
+<body>
+<div id="respond-page-topbar">
+  <a class="respond-page-mark" href="../../index.html" aria-label="Return to RESPOND Guide Library" title="Return to RESPOND Guide Library">
+    <img src="../../favicons/R_Staff_102.png" alt="" width="40" height="40" loading="eager" decoding="async">
+  </a>
+</div>
+
+    <div class="container">
+ <header>
+
+            <div style="text-align: left;">
+                <span style="display:inline-flex;gap:4px;margin-bottom:8px;">
+                    <span style="width:10px;height:10px;border-radius:50%;background:#24457B;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#1E5947;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#C27D56;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#D13529;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#F0B126;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#2E81CF;display:inline-block;"></span>
+                    <span style="width:10px;height:10px;border-radius:50%;background:#8424E8;display:inline-block;"></span>
+                </span>
+            </div>
+            <div class="scenario-number"><strong>RESPOND</strong> Safeguarding Framework · Scenario 102 · Staff Guide 102</div>
+            <div class="age-chip">For Staff</div>
+            <h1>Online Influence and the Manosphere</h1>
+            
+            <p style="font-size: 1.1em; margin-top: 15px;">Recognising and responding when misogynistic and harmful online content reaches students</p>        </header>
+
+
+        <details class="content-warning" aria-label="Content warning">
+            <summary>
+                <span class="cw-title"><i class="fas fa-exclamation-circle"></i> Content Warning</span>
+                <span class="cw-sub">This guide includes misogynistic language and online harm. <span class="screen-only">Select to read about support before you continue.</span></span>
+                <span class="cw-toggle" aria-hidden="true">▼</span>
+            </summary>
+            <div class="cw-body">
+            <p style="line-height:1.7;"><strong>This is reference guidance, not a training course.</strong> Use it to check how to respond, or to prepare for a conversation. It does not replace the school's safeguarding training, policy or the DSL's advice on a specific case.</p>
+            <p style="line-height:1.7; margin-top:10px;">It contains examples of misogynistic language and online content, and references to sexual harassment, image-based abuse and self-harm. Some of it may be difficult to read, particularly if it connects with your own experience or that of someone close to you.</p>
+            <ul class="list-styled" style="margin-top:10px;">
+                <li>You can read them in sections, take a break, or step away at any point.</li>
+                <li>If this raises something personal, you can speak in confidence to your line manager, a senior colleague you trust, or the school's Employee Assistance Programme, if it has one, or <strong>Education Support</strong> (free, confidential, 24/7 on <a href="tel:08000562561">08000 562 561</a>).</li>
+                <li>If you have a question about how this guidance applies to a situation you are dealing with, speak to your school's Designated Safeguarding Lead (DSL).</li>
+            </ul>
+            <p style="margin-top:12px;font-weight:600;">If reading this makes you worried about a child now, do not wait until you have finished reading: speak to the DSL or a deputy straight away. If a child is in immediate danger, call 999.</p>
+            </div>
+        </details>
+
+        <div class="ops-emergency" role="note"><p><i class="fas fa-exclamation-triangle"></i> <strong>Immediate danger or possible risk to life:</strong> call 999 when it is needed, stay with the child, and summon the DSL or a deputy. Don't delay action to work through the steps. The 90-second Pause is for once immediate safety is secured, to stop an impulsive or investigative response.</p></div>
+
+
+        <nav class="top-toolbar" aria-label="Page tools">
+            <details class="tb-drop">
+                <summary class="tb-btn"><i class="fas fa-list-ul"></i> Contents <span class="tb-caret">▼</span></summary>
+                <div class="tb-panel">
+                    <p class="tb-note">Choose a section to open it and jump straight there.</p>
+                    <ol><li><a href="#sec-1" class="toc-link" data-target="sec-1">What It Is and Why It Matters</a></li><li><a href="#sec-2" class="toc-link" data-target="sec-2">Decode the Feed: Terms Staff May Hear</a></li><li><a href="#sec-3" class="toc-link" data-target="sec-3">How It Can Present at Different Ages</a></li><li><a href="#sec-4" class="toc-link" data-target="sec-4">Recognise and Engage</a></li><li><a href="#sec-5" class="toc-link" data-target="sec-5">Supporting Those Affected</a></li><li><a href="#sec-6" class="toc-link" data-target="sec-6">The NOISE Check: a Critical-Literacy Tool</a></li><li><a href="#sec-7" class="toc-link" data-target="sec-7">Where Would You Draw the Line?</a></li><li><a href="#sec-8" class="toc-link" data-target="sec-8">Walk It Through RESPOND: Three Age-Group Scenarios</a></li><li><a href="#sec-9" class="toc-link" data-target="sec-9">Sources</a></li></ol>
+                </div>
+            </details>
+            <details class="tb-drop">
+                <summary class="tb-btn"><i class="fas fa-share-square"></i> Guides to share <span class="tb-caret">▼</span></summary>
+                <div class="tb-panel">
+                    <p class="tb-note">Self-guided guides for students and parents. Each covers online influence and the manosphere in the section named on its card. Share these, not this staff page.</p>
+                    <div class="guide-grid">
+                <div class="guide-card" style="background:linear-gradient(135deg,#0F1644 0%,#1E3D6F 100%);">
+                    <div class="gc-top"><i class="fas fa-user-graduate"></i> <span class="gc-name">Student Guide 101 - 11 to 14</span></div>
+                    <div class="gc-title">Respect, Sexism and Misogyny</div>
+                    <div class="gc-who" style="color:#F5C842;">For students aged 11 to 14</div>
+                    <div class="gc-see" style="font-size:0.85em; margin:6px 0 2px; color:rgba(255,255,255,0.92);"><i class="fas fa-bookmark"></i> See: <strong>Online Words and Videos: What's Really Going On?</strong></div>
+                    <div class="gc-links"><a href="https://sites.google.com/tasisengland.org/studentguide101-11to14/respond" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Open guide</a><a href="https://drive.google.com/file/d/1Rh7e-4hlnB5qr50wSzPP2lIsbO-xB3rA/view?usp=drive_link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a></div>
+                </div>
+                <div class="guide-card" style="background:linear-gradient(135deg,#1E293B 0%,#9F1239 100%);">
+                    <div class="gc-top"><i class="fas fa-user-graduate"></i> <span class="gc-name">Student Guide 101 - 14 to 18</span></div>
+                    <div class="gc-title">Misogyny, Sexual Harassment and Healthy Relationships</div>
+                    <div class="gc-who" style="color:#FFE4E6;">For students aged 14 to 18</div>
+                    <div class="gc-see" style="font-size:0.85em; margin:6px 0 2px; color:rgba(255,255,255,0.92);"><i class="fas fa-bookmark"></i> See: <strong>Online Influence and the "Manosphere"</strong></div>
+                    <div class="gc-links"><a href="https://sites.google.com/tasisengland.org/studentguide101-14to18/example" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Open guide</a><a href="https://drive.google.com/file/d/1NFvA8XueSROiEYh9HskL7WhRfO_JwUxZ/view?usp=drive_link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a></div>
+                </div>
+                <div class="guide-card" style="background:linear-gradient(135deg,#1E293B 0%,#0E7490 100%);">
+                    <div class="gc-top"><i class="fas fa-house-user"></i> <span class="gc-name">Parent Guide 101 - Ages 4 to 18</span></div>
+                    <div class="gc-title">Misogyny and Online Influence: A Guide for Parents</div>
+                    <div class="gc-who" style="color:#CFFAFE;">For parents, carers and guardians</div>
+                    <div class="gc-see" style="font-size:0.85em; margin:6px 0 2px; color:rgba(255,255,255,0.92);"><i class="fas fa-bookmark"></i> See: <strong>Online Influence and the "Manosphere"</strong></div>
+                    <div class="gc-links"><a href="https://sites.google.com/tasisengland.org/respondscenario101-parentguide/respond" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Open guide</a><a href="https://drive.google.com/file/d/1B7ryeFutzSFWlr3yympAYzZLMfQvdmm7/view?usp=drive_link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a></div>
+                </div>
+                </div>
+        
+                </div>
+            </details>
+            <div class="tb-search" role="search">
+                <label for="pageSearch" class="sr-only">Search</label>
+                <input type="search" id="pageSearch" class="tb-search-input" placeholder="Search" autocomplete="off">
+                <span class="tb-search-count" aria-live="polite"></span>
+                <button type="button" class="tb-search-nav" data-dir="-1" aria-label="Previous match">&#8593;</button>
+                <button type="button" class="tb-search-nav" data-dir="1" aria-label="Next match">&#8595;</button>
+            </div>
+            <span class="tb-spacer"></span>
+            <button type="button" class="tb-btn tb-primary tb-expand" onclick="expandAll(this)"><i class="fas fa-expand-arrows-alt"></i> Expand all</button>
+            <a class="tb-btn" href="https://drive.google.com/file/d/1wLkUhEVzRLQLY5XMJ4Ws9dUk5XfM4FJ1/view?usp=drive_link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>
+            <button type="button" class="tb-btn js-print"><i class="fas fa-print"></i> Print</button>
+        </nav>
+
+        <div class="info-box" style="border-left-color:#1E3D6F; margin-bottom:22px;">
+            <h4><i class="fas fa-link"></i> Companion to Scenario 101</h4>
+            <p>Scenario 102 is the companion to <a href="https://sites.google.com/tasisengland.org/respondtrainingscenario101/respond" target="_blank" rel="noopener"><strong>Staff Guide 101: Misogyny and Violence Against Women and Girls</strong></a>, which covers the full RESPOND response, the interactive RESPOND Helix, contacts and the Quick Reference Card. Use this guide when misogyny reaches students through online content: short videos, memes, gaming and fitness content, and the wider "manosphere".</p>
+            <p style="margin-top:8px;">The same principle runs through both: <strong>recognise the pattern without labelling the child</strong>. Most boys and young men are respectful, and some of the boys drawn to this content are harmed by it themselves.</p>
+        </div>
+
+        <div class="respond-section" id="sec-1">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-project-diagram"></i></span>
+                    <span>What It Is and Why It Matters</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+
+                <p style="font-size: 1.1em; font-weight: 600; margin-bottom: 15px;">
+                    Much of the misogyny students repeat now reaches them through short videos, memes, gaming and fitness content rather than forums they go looking for. This guide helps staff recognise that content, talk about it without closing the conversation, and judge when it becomes a safeguarding concern.
+                </p>
+                <div class="info-box">
+                    <h4><i class="fas fa-user-secret"></i> Track the Message, Not the Name</h4>
+                    <p>This page names no influencers or creators, in line with the RSHE statutory guidance, which advises against signposting content producers. Names change quickly: the next influential account may be one you have never heard of. Look for the <strong>message</strong> and the <strong>pattern</strong>. The key principle throughout: <strong>recognise the pattern without labelling the child</strong>.</p>
+                </div>
+
+                <div class="subsection">
+
+                    <ul class="list-styled"><li><strong>A loose ecosystem:</strong> many communities and creators, not one belief system. They overlap, disagree and change.</li><li><strong>Shared language:</strong> red pill, alpha and sigma hierarchies, rigid gender roles, resentment, and relationships framed as a contest between men and women.</li><li><strong>A spectrum, not a label:</strong> not all masculinity, fitness, men's mental health or family-values content is harmful. What matters is the message, the pattern, the context and the impact.</li><li><strong>From forums to feeds:</strong> young people once had to find a forum and learn its language. Now a single clip, meme or gaming edit can carry one idea without naming the ideology, and recommendation systems can bring it to them through ordinary interests such as sport, gaming and the gym.</li><li><strong>A broader ecosystem:</strong> alongside status and dating content sit looksmaxxing, rigid food and body rules, supplements and hormone anxiety, and &quot;family values&quot; or tradwife content presented as the only legitimate model.</li></ul>
+                </div><div class="subsection">
+                    <h3><i class="fas fa-magnet"></i> Why It Can Be Compelling</h3>
+
+                    <p>Understanding the pull is part of <strong>Pause</strong>: it helps you respond to the need underneath rather than argue with the content.</p>
+                    <div class="stat-grid">
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Belonging</div><div class="stat-label">A community, a vocabulary and an identity, especially for a young person who feels rejected or unsure</div></div>
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Certainty</div><div class="stat-label">Simple rules for complicated questions about gender, relationships, status and success</div></div>
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Aspiration</div><div class="stat-label">Money, physique, confidence and success packaged as easy to achieve</div></div>
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Emotion</div><div class="stat-label">Anger, humour, shame and grievance are memorable and spread fast</div></div>
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Authenticity</div><div class="stat-label">Creators present themselves as outsiders &quot;saying what others won't&quot;</div></div>
+                        <div class="stat-tile"><div class="stat-value" style="font-size:1.3em;">Earnings</div><div class="stat-label">Attention turns into subscriptions, courses, products and affiliate sales</div></div>
+                    </div>
+                    <div class="info-box">
+                        <h4><i class="fas fa-laugh-squint"></i> Humour Matters: "I Know It's Bad, but It's Funny"</h4>
+                        <ul class="list-styled"><li><strong>Humour lowers the temperature:</strong> a statement framed as a joke feels less serious, so it is easier to repeat.</li><li><strong>Peer currency:</strong> memes, catchphrases and ironic references buy status and belonging.</li><li><strong>Normalisation:</strong> repetition shifts what sounds ordinary, even when a student says they don't &quot;believe&quot; it.</li><li>Students can <strong>reject the influencer and still repeat the ideas</strong>. The RSHE statutory guidance asks staff to be conscious of everyday sexism and misogyny, and to challenge misogynistic ideas rather than the person expressing them (paragraph 80). Where comments amount to sexual harassment, KCSIE 2026 is clear that they must never be dismissed as &quot;banter&quot; or &quot;just having a laugh&quot;.</li></ul>
+                    </div>
+                </div><div class="subsection">
+                    <h3><i class="fas fa-stopwatch"></i> How Quickly It Arrives: the Evidence</h3>
+
+                    <p>Researchers at Dublin City University set up ten new accounts on blank smartphones, five on TikTok and five on YouTube Shorts, posing as 16 and 18 year old boys. Some searched for ordinary interests (gym, sport, gaming); some searched for manosphere content; one per platform was a blank control. They then watched what the platforms recommended (April 2024).</p>
+                    <div class="stat-grid">
+                        <div class="stat-tile"><div class="stat-value">23 min</div><div class="stat-label">All ten accounts were recommended toxic content within the first 23 minutes</div><div class="stat-source"><a href="https://www.dcu.ie/antibullyingcentre/recommending-toxicity-summary-report" target="_blank" rel="noopener">DCU Anti-Bullying Centre, 2024</a></div></div>
+                        <div class="stat-tile"><div class="stat-value">26 min</div><div class="stat-label">All ten were recommended manosphere content within the first 26 minutes</div><div class="stat-source"><a href="https://www.dcu.ie/antibullyingcentre/recommending-toxicity-summary-report" target="_blank" rel="noopener">DCU Anti-Bullying Centre, 2024</a></div></div>
+                        <div class="stat-tile"><div class="stat-value">2 to 17 min</div><div class="stat-label">Accounts interested only in gym, sport and gaming were recommended manosphere content after between 2 and 17 minutes, depending on platform and account</div><div class="stat-source"><a href="https://www.dcu.ie/antibullyingcentre/recommending-toxicity-summary-report" target="_blank" rel="noopener">DCU Anti-Bullying Centre, 2024</a></div></div>
+                        <div class="stat-tile"><div class="stat-value">76% / 78%</div><div class="stat-label">of recommendations in the final round (after about 400 videos, two to three hours) were problematic or toxic on TikTok / YouTube Shorts</div><div class="stat-source"><a href="https://www.dcu.ie/antibullyingcentre/recommending-toxicity-summary-report" target="_blank" rel="noopener">DCU Anti-Bullying Centre, 2024</a></div></div>
+                    </div>
+                    <div class="warning-box">
+                        <h4><i class="fas fa-balance-scale"></i> Reading This Honestly</h4>
+                        <p>This is a small experimental study of ten accounts from 2024, and platforms have changed their systems since. It shows <strong>how recommendation can work</strong>; it does not measure what every student sees. Use it to explain why a student with ordinary interests may meet this content without looking for it, not as a prevalence figure.</p>
+                        <p style="margin-top:8px;">The researchers also <strong>engaged with what they were shown</strong>: they watched the recommended videos, and some accounts searched for manosphere content. The later figures (76% and 78%) reflect those experimental conditions, not an untouched feed that nobody interacts with. The early figures still show how quickly this content can appear.</p>
+                    </div>
+                    <p class="stat-note"><strong>Humour and peer groups:</strong> a small UK focus-group study with twelve Year 9 boys aged 13 to 14 found boys described this content as entertaining through its &quot;shock value&quot;, and that humour let them repeat ideas while saying the creator was &quot;putting on an act&quot;. It is a small qualitative study, useful for understanding how boys talk about the content, not for measuring how common those views are. <a href="https://doi.org/10.1177/20563051241228811" target="_blank" rel="noopener">Haslop, Ringrose, Cambazoglu and Milne (2024), <em>Social Media + Society</em> (University of Liverpool and UCL)</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-2">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-language"></i></span>
+                    <span>Decode the Feed: Terms Staff May Hear</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+
+                    <p>Terms overlap and change quickly. Check this list each time you use it.</p>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4><i class="fas fa-book"></i> Glossary (15 terms)</h4>
+                            <span>▼</span>
+                        </div>
+                        <div class="accordion-body">
+<div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Term</th><th>What it usually means</th></tr></thead><tbody><tr><td><strong>Manosphere</strong></td><td>A loose network of online communities and creators focused on masculinity, dating, status and perceived male disadvantage. Some strands are strongly anti-feminist; they do not all hold the same beliefs.</td></tr><tr><td><strong>Manfluencer</strong></td><td>A male influencer whose content centres on masculinity, status, money, relationships or self-improvement.</td></tr><tr><td><strong>Red pill</strong></td><td>Borrowed from <em>The Matrix</em>: supposedly "waking up" to hidden truths about gender, feminism and relationships.</td></tr><tr><td><strong>Black pill</strong></td><td>A fatalistic belief, common in some incel spaces, that looks and genetics decide romantic success and nothing can change it.</td></tr><tr><td><strong>Incel</strong></td><td>"Involuntary celibate": an online identity built around not having the relationships someone wants, often with resentment towards women.</td></tr><tr><td><strong>MGTOW</strong></td><td>"Men Going Their Own Way": communities that advocate men withdrawing from relationships with women.</td></tr><tr><td><strong>MRA</strong></td><td>Men's Rights Activist. Online strands vary widely in tone and ideology.</td></tr><tr><td><strong>PUA</strong></td><td>Pick-Up Artist: a dating subculture teaching "techniques" and scripts to get attention from women.</td></tr><tr><td><strong>Alpha / Beta / Sigma</strong></td><td>Status labels used to rank boys and men. "Sigma" is widely used in memes and jokes, often by younger students.</td></tr><tr><td><strong>High-value man (HVM)</strong></td><td>Shorthand for a man with money, status and physique, often paired with claims that women's "value" falls with age. Watch for it being used to rank peers.</td></tr><tr><td><strong>Top G</strong></td><td>A status nickname that began as one prominent influencer's self-branding. Now used by students as a joke or a label for someone seen as dominant.</td></tr><tr><td><strong>Looksmaxxing</strong></td><td>Trying to maximise physical attractiveness. It ranges from ordinary grooming and fitness to risky practices, extreme dieting and unregulated products.</td></tr><tr><td><strong>Mogging</strong></td><td>Outshining or dominating someone, usually in looks or status ("he got mogged"). Used to rank and humiliate.</td></tr><tr><td><strong>Mewing</strong></td><td>A tongue-posture technique promoted with claims that it reshapes the jaw; those claims are not supported by robust evidence. Younger students also use the "mewing" gesture as a meme to avoid answering a question.</td></tr><tr><td><strong>Tradwife</strong></td><td>An online aesthetic built around highly traditional wife and mother roles. Not in itself manosphere content, but it can overlap with rigid gender ideology.</td></tr></tbody></table></div>
+                        </div>
+                    </div>
+                    <div class="success-box">
+                        <h4><i class="fas fa-lightbulb"></i> Not Knowing a Term Is Normal</h4>
+                        <p>The skill is not knowing every word. It is asking <strong>"What does that mean to you?"</strong> rather than pretending to know. Students often use the same word in very different ways, from an ironic joke to a sincere belief. Their answer tells you which.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-3">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-child"></i></span>
+                    <span>How It Can Present at Different Ages</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+
+                    <p>The same ecosystem can look very different across childhood and adolescence. These are examples for professional curiosity, <strong>not a checklist for labelling a student</strong>.</p>
+                    <div class="age-cols">
+                        <div class="age-col"><h4>Ages 4 to 9</h4><div class="age-tag">Copied phrases and rules</div><ul class="list-styled">
+                            <li><strong>Play and exclusion:</strong> "Girls can't be the leader." "That's a boy job."</li>
+                            <li><strong>Emotion rules:</strong> "Boys don't cry"; mocking a boy for seeking comfort</li>
+                            <li><strong>Spillover:</strong> meme words from older siblings, gaming or YouTube, often not understood</li>
+                            <li><strong>Status and bodies:</strong> "the strongest boy is the best"</li>
+                            <li><strong>Put-downs:</strong> "girl" used as an insult</li>
+                            <li><strong>Imitation:</strong> repeating a line from a video because it gets a reaction</li></ul></div>
+                        <div class="age-col"><h4>Ages 10 to 13</h4><div class="age-tag">Memes, jokes, rating peers</div><ul class="list-styled">
+                            <li><strong>Hierarchies:</strong> ranking boys as alpha, beta or sigma to humiliate peers</li>
+                            <li><strong>"Only a joke":</strong> sexist clips and catchphrases shared ironically for laughs</li>
+                            <li><strong>Rating girls:</strong> scoring looks or &quot;value&quot;</li>
+                            <li><strong>Looksmaxxing:</strong> jawline, height and muscle anxiety; &quot;mogging&quot;</li>
+                            <li><strong>Grievance:</strong> from &quot;girls get away with more&quot; to &quot;feminism is the problem&quot;</li>
+                            <li><strong>Group chats:</strong> language in voice chat or messages spills into school</li></ul></div>
+                        <div class="age-col"><h4>Ages 14 to 18</h4><div class="age-tag">A more coherent worldview</div><ul class="list-styled">
+                            <li><strong>Red-pill explanations:</strong> &quot;sexual marketplace&quot;, &quot;high-value&quot;</li>
+                            <li><strong>Black-pill fatalism:</strong> &quot;no point trying&quot;; resentment presented as justified</li>
+                            <li><strong>Relationship control:</strong> jealousy, surveillance, manipulation as strategy</li>
+                            <li><strong>Entitlement:</strong> attention or sex treated as owed; hostility after rejection</li>
+                            <li><strong>Optimisation:</strong> worth tied to dominance, money, gym or diet extremes</li>
+                            <li><strong>Targeted harm:</strong> pile-ons, rumours, image sharing and deepfakes</li></ul></div>
+                    </div>
+                    <p><strong>One idea can change shape as a child grows</strong> (dominance and gender hierarchy):</p>
+                    <div class="shape-row">
+                        <div class="shape"><b>Ages 4 to 9</b>"Boys are stronger, so boys should lead."<br><small>A copied rule; playground hierarchy</small></div>
+                        <div class="arrow">→</div>
+                        <div class="shape"><b>Ages 10 to 13</b>"He's alpha. He gets girls. That boy is a beta."<br><small>Meme and peer-status hierarchy</small></div>
+                        <div class="arrow">→</div>
+                        <div class="shape"><b>Ages 14 to 18</b>"Men need to dominate relationships or women will lose respect for them."<br><small>An ideological relationship script</small></div>
+                    </div>
+                    <p class="tagline">The task is not to wait for the final stage. Early, curious intervention can challenge the message while protecting belonging and connection.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-4">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #24457B 0%, #1E5947 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-comments"></i></span>
+                    <span>Recognise and Engage</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+                    <h3><i class="fas fa-search"></i> Recognise: What You Might Notice</h3>
+
+                    <ul class="checklist"><li>Alpha, sigma or red-pill vocabulary that moves from joking into rigid beliefs about gender</li><li>Growing hostility, contempt or distrust towards girls and women, or towards boys who don't fit narrow norms</li><li>Preoccupation with status, muscle, looksmaxxing, extreme dieting or risky body practices</li><li>Relationship language about manipulation, ownership, &quot;winning&quot;, humiliation or entitlement</li><li>Misogynistic, conspiratorial or grievance content clustering across platforms</li><li>Withdrawal from friends, meals, sleep or activities alongside the language</li></ul>
+                    <p class="tagline">Change over time matters more than a single meme, phrase or follow. Use the 4 Ps: People, Places, Platforms, Patterns.</p>
+                </div><div class="subsection">
+                    <h3><i class="fas fa-comments"></i> Engage: Curiosity Before Confrontation</h3>
+
+                    <p>Understand first; don't turn it into a contest. Curiosity does not mean letting harm pass: name the harm, then keep the conversation open. Use <strong>TED</strong> (Tell me, Explain, Describe) and avoid "why", which sounds like an accusation.</p>
+                    <div class="do-dont-container">
+                        <div class="do-box"><h4><i class="fas fa-question-circle"></i> Open Questions</h4><ul class="list-styled"><li>&quot;What does that mean to you?&quot;</li><li>&quot;Tell me where you first heard that.&quot;</li><li>&quot;Describe what you like about that creator or idea.&quot;</li><li>&quot;How do you think that might land with someone else?&quot;</li><li>&quot;What would make you question it?&quot;</li><li>&quot;Who is making money or getting attention from this?&quot;</li></ul></div>
+                        <div class="dont-box"><h4><i class="fas fa-times-circle"></i> Traps to Avoid</h4><ul class="list-styled"><li>Arguing about the influencer, their wealth or their lifestyle</li><li>Demanding the student denounce someone</li><li>Public shaming or ridicule</li><li>Treating one phrase as proof of radicalisation</li><li>Forgetting the students affected by what was said</li></ul></div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4><i class="fas fa-exchange-alt"></i> Say It Differently: Model Rewrites</h4>
+                            <span>▼</span>
+                        </div>
+                        <div class="accordion-body">
+<div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Instinctive response</th><th>A RESPOND response</th></tr></thead><tbody><tr><td>&quot;That's disgusting. He's a criminal and you should know better.&quot;</td><td>&quot;That comment is derogatory to women and girls. I'm curious though: what is it about him that people like?&quot;</td></tr><tr><td>&quot;We don't say that here. Detention.&quot;</td><td>&quot;That comment isn't OK in this room because of how it lands for the girls here. Can you stay back for two minutes? I want to understand where it's coming from.&quot; <em>(4Ds: Direct, then Delay. A sanction may still follow under the behaviour policy; it is just not the only response.)</em></td></tr><tr><td>&quot;You don't actually believe that, do you?&quot;</td><td>&quot;What makes that feel true to you? Tell me where you first came across it.&quot;</td></tr><tr><td>&quot;Boys will be boys. Just ignore it.&quot;</td><td>Never ignore it. &quot;I heard that. It's not OK here, and I'll come and check in with you in a minute.&quot; Then check in with anyone affected.</td></tr><tr><td>&quot;I'm calling your parents about this.&quot;</td><td>&quot;I'm going to need to share this, and I'll tell you what happens next.&quot; Parents may well be involved, as part of a plan rather than a threat.</td></tr><tr><td>&quot;Why would I listen to you? He's a millionaire and you're a teacher.&quot;</td><td>Don't defend your status or argue about his money. &quot;Lots of people find that lifestyle impressive. What does being successful mean to you?&quot; You are not trying to win the argument.</td></tr></tbody></table></div><p class="stat-note"><strong>What good looks like:</strong> a calm tone; names the behaviour, not the child; one open question; a clear next step; remembers the students affected.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-5">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #C27D56 0%, #9a5f3f 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-user-shield"></i></span>
+                    <span>Supporting Those Affected</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+
+                <p style="font-size: 1.05em; margin-bottom: 15px;">Much of this guide is about understanding the student who repeats the ideas. The people on the receiving end need as much attention: the girls and young women targeted, other students affected, and staff. The challenge in the moment is the start of the response, not the end of it.</p>
+                <div class="subsection">
+                    <h3><i class="fas fa-user-shield"></i> After the Moment: Students Who Were Targeted</h3>
+                    <ul class="list-styled">
+                        <li><strong>Ask for their view.</strong> Speak privately and ask what happened, how it has affected them and what would help. Their wishes shape the response, but you cannot promise what will happen or keep it secret.</li>
+                        <li><strong>Check whether it is continuing:</strong> in group chats, online, in the peer group or, for boarders, in the house. Tell the DSL what you know; don't investigate or ask to see images.</li>
+                        <li><strong>Think about retaliation.</strong> A challenge in class can lead to a backlash later, online or at break. Plan with them for lessons, break times, travel and, for boarders, evenings.</li>
+                        <li><strong>Agree support and a named adult they trust.</strong> Check back within a few days and again later, and tell them what has been done, as far as you can.</li>
+                        <li><strong>Don't move the burden onto them.</strong> Where arrangements need to change, the student who was targeted should not be the one who has to change their routine.</li>
+                    </ul>
+                    <div class="warning-box">
+                        <h4><i class="fas fa-hand-paper"></i> Not Their Job</h4>
+                        <ul class="list-styled">
+                            <li>Girls who are targeted are <strong>not responsible for educating boys</strong> about misogyny.</li>
+                            <li>Restorative conversations happen only if the affected student freely chooses them, and <strong>never as a condition of resolving the incident</strong>. They are not appropriate where there has been sexual harm or a significant imbalance of power; the DSL decides.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> When Staff Are Targeted</h3>
+                    <ul class="list-styled">
+                        <li><strong>Finding a conversation hard is different from being on the receiving end.</strong> Hearing misogyny can leave any member of staff angry or upset: talk it through with a colleague, in supervision or with the DSL.</li>
+                        <li><strong>Being personally targeted by misogynistic abuse</strong>, in person or online, is an incident, not something to absorb. Report it to your line manager and record it. It needs a management response and support for you: the school's Employee Assistance Programme if it has one, or <strong>Education Support</strong> (free, confidential, 24/7 on <a href="tel:08000562561">08000 562 561</a>). A debrief alone is not enough.</li>
+                        <li><strong>Female staff should not be expected to absorb misogynistic behaviour, or to resolve it on their own, because of their gender.</strong> Leaders share the responsibility.</li>
+                        <li>If a student's behaviour towards staff also raises a safeguarding concern about the student, tell the DSL. <a href="https://sites.google.com/tasisengland.org/respondtrainingscenario101/respond" target="_blank" rel="noopener"><strong>Staff Guide 101</strong></a> has a full section: <em>When the Target Is a Member of Staff</em>.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-6">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-filter"></i></span>
+                    <span>The NOISE Check: a Critical-Literacy Tool</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+
+                    <p>A quick way to take a post apart with a student, without attacking the student. Model it aloud; students aged 11 and above can do it themselves. Student versions, with a word decoder, are in the <a href="https://sites.google.com/tasisengland.org/studentguide101-11to14/respond" target="_blank" rel="noopener">Student Guide 101 - 11 to 14</a> and <a href="https://sites.google.com/tasisengland.org/studentguide101-14to18/example" target="_blank" rel="noopener">Student Guide 101 - 14 to 18</a>.</p>
+                    <div class="noise-grid">
+                        <div><div class="nl">N</div><div class="nw">Negative</div><div class="nq">Which feelings does it use? Anger, shame, jealousy, &quot;not good enough&quot;</div></div>
+                        <div><div class="nl">O</div><div class="nw">Oppositional</div><div class="nq">Who is set against whom? Us vs them, men vs women</div></div>
+                        <div><div class="nl">I</div><div class="nw">Insecurity</div><div class="nq">Which worries does it profit from? Looks, money, dating, status</div></div>
+                        <div><div class="nl">S</div><div class="nw">Simplistic</div><div class="nq">What is the too-easy answer? One fix, whole groups stereotyped</div></div>
+                        <div><div class="nl">E</div><div class="nw">Earnings</div><div class="nq">Who makes money from the click, follow, course or product?</div></div>
+                    </div>
+                    <div class="fake-post" role="img" aria-label="A fictional social media post used for the NOISE check">
+                        <div class="fp-head"><div class="fp-av"></div><div><div class="fp-name">@PeakMale.Protocol</div><div class="fp-meta">Fictional account · 1.2M views</div></div></div>
+                        <p>Bro. 90% of guys are invisible to women. Why? Weak jaw. Weak mindset. No money.</p>
+                        <p>Women only want the top 10%. Stop being the "nice guy". Start being HIGH VALUE.</p>
+                        <p>My 30-Day Alpha Protocol fixes your face, your bank account and your dating life.</p>
+                        <p>Link in bio. Only 50 places left.</p>
+                    </div>
+                    <p class="fake-label">A fictional post written for these scenarios; the account does not exist. The "90%" figure is invented, which is part of the point.</p>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)"><h4><i class="fas fa-key"></i> Suggested Answers</h4><span>▼</span></div>
+                        <div class="accordion-body"><ul class="list-styled">
+                            <li><strong>N:</strong> "invisible", "weak jaw, weak mindset": shame and fear of rejection</li>
+                            <li><strong>O:</strong> women framed as judges who "only want the top 10%"; "nice guys" framed as losers. Sets boys against girls and against each other</li>
+                            <li><strong>I:</strong> jaw, money and dating: three of the biggest teenage worries in one post</li>
+                            <li><strong>S:</strong> an invented statistic and one product that "fixes" face, finances and relationships</li>
+                            <li><strong>E:</strong> a paid programme, link in bio, false scarcity ("only 50 places left") and the view count as social proof</li>
+                        </ul>
+                        <p class="stat-note">In class, use a teacher-written post like this one. Never use real posts by real students, and avoid screen-sharing live creator content.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-7">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-sliders-h"></i></span>
+                    <span>Where Would You Draw the Line?</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+
+                    <p>Eight fictional scenarios with suggested placements. They are for discussion, not a marking scheme.</p>
+                    <div class="info-box">
+                        <h4><i class="fas fa-list-ol"></i> Three Decisions, Every Time</h4>
+                        <ol class="list-styled">
+                            <li><strong>What do I do now?</strong> Almost every scenario needs an in-the-moment response: challenge the behaviour, if it is safe to do so, and check on anyone affected.</li>
+                            <li><strong>Where is it recorded?</strong> Record every incident, including a first one, on the school's usual system: behaviour and discriminatory incidents on the behaviour record; anything that is a safeguarding concern on the safeguarding system, through the DSL. Information from parents, or screenshots of group chats, goes to the DSL; don't forward images.</li>
+                            <li><strong>Does it need the DSL, and how fast?</strong> A single incident may need a challenge and a record without an urgent referral. A threat, a sexual image or a risk to a child goes to the DSL immediately, even if it is the first incident.</li>
+                        </ol>
+                        <p style="margin-top:8px;">The placements below show the <strong>level of escalation</strong>. They build on each other: B, C and D all include responding in the moment and recording.</p>
+                    </div>
+                    <p style="display:flex; flex-wrap:wrap; gap:6px;"><span class="place place-a">A. Respond and record</span> <span class="place place-b">B. Also share, to watch the pattern</span> <span class="place place-c">C. DSL today</span> <span class="place place-d">D. Immediate risk: DSL now</span></p>
+                    <div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Scenario</th><th>Suggested placement</th><th>Reasoning</th></tr></thead><tbody><tr><td>A Year 3 boy tells a classmate &quot;girls can't be goalkeeper, boys are stronger&quot;.</td><td><span class="place place-a">A. Respond and record</span></td><td>Challenge kindly and teach (&quot;anyone can be goalkeeper&quot;); ask where he heard it. Record it, so that a pattern can be seen if it happens again.</td></tr><tr><td>A Year 7 student calls a quieter boy &quot;a beta&quot; in class. The class laughs.</td><td><span class="place place-a">A. Respond and record</span> <span class="place place-b">B. Also share, to watch the pattern</span></td><td>Stop it, support the boy targeted, address the laughter, and record it. Share it with the tutor or pastoral lead: repeated targeting is bullying.</td></tr><tr><td>A Year 8 group chat rates girls in the year out of 10. A parent forwards a screenshot.</td><td><span class="place place-c">C. DSL today</span></td><td>Potentially sexual harassment and child-on-child abuse: the DSL assesses whether the ratings are sexualised or degrading, whether girls are being repeatedly targeted, and the impact on them. Support the girls affected either way. Where it is sexual harassment, KCSIE is clear: never dismiss it as banter.</td></tr><tr><td>A Year 11 student says women &quot;should obey men&quot;. Third time this month; he is withdrawing from friends.</td><td><span class="place place-c">C. DSL today</span></td><td>The pattern plus behaviour change plus withdrawal is the concern, not one phrase. The DSL decides next steps, including whether any Prevent consultation is appropriate.</td></tr><tr><td>A Year 12 student says girls who reject him &quot;deserve what's coming&quot;. Filtering flags searches for incel forums.</td><td><span class="place place-d">D. Immediate risk: DSL now</span></td><td>A possible threat combined with a filtering alert. Don't wait until the end of the day. The DSL decides on police or Prevent involvement.</td></tr><tr><td>A Year 10 student is skipping meals and buying supplements to &quot;fix&quot; his jaw after looksmaxxing videos.</td><td><span class="place place-c">C. DSL today</span></td><td>A wellbeing and health concern. The DSL will involve the school nurse or health centre and counselling as appropriate.</td></tr><tr><td>A Year 13 student tracks his girlfriend's location and tells her who she can talk to.</td><td><span class="place place-c">C. DSL today</span></td><td>Recognised signs of controlling behaviour. <strong>DSL now</strong> if there are threats or fear for her safety. Support her as well as addressing him.</td></tr><tr><td>A Year 9 student shares an AI-generated sexualised image of a classmate.</td><td><span class="place place-d">D. Immediate risk: DSL now</span></td><td>Follow the <a href="https://www.gov.uk/government/publications/sharing-nudes-and-semi-nudes-advice-for-education-settings-working-with-children-and-young-people" target="_blank" rel="noopener">UKCIS nudes and semi-nudes guidance</a>: don't view, copy, forward or delete the image; secure the device if needed. AI-generated or digitally altered sexual images of children may constitute indecent images under UK law. <strong>Don't try to establish their legal status yourself:</strong> tell the DSL immediately. The DSL assesses the safeguarding risks and seeks police advice where appropriate. The guidance allows an authorised DSL to view an image only in exceptional circumstances where it is necessary for safeguarding.</td></tr></tbody></table></div>
+                    <div class="critical-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> If You Are Unsure Between Two Columns</h4>
+                        <p>Choose the more protective one and speak to the DSL: <strong>if in doubt, N before O</strong>. Use the <strong>Three Lenses</strong> to justify your decision (Risk, Rights, Resources) and the <strong>4 Ps</strong> to see what is involved. Anyone can refer directly to children's social care if they believe a child is at risk; telling the DSL does not remove your own responsibility.</p>
+                    </div>
+                    <div class="warning-box">
+                        <h4><i class="fas fa-user-check"></i> Keep the Boys in View</h4>
+                        <ul class="list-styled">
+                            <li><strong>Controlling behaviour is often a group activity.</strong> Research on teenage relationship abuse finds it can be "a 'collective' endeavour", with young men's friends encouraging them to control their partners. Work with the peer group's norms, not only the individual.</li>
+                            <li><strong>Watch for distancing language.</strong> In one study, professionals discussing "toxic masculinity" in a school peer group described the boys as "unpleasant", and planned interventions "remained removed from the real, live boys". It is hard to help someone you have written off.</li>
+                            <li><strong>Hold accountability and respect together:</strong> challenge the behaviour, and keep treating the boy as someone worth engaging.</li>
+                            <li><strong>Look after staff too.</strong> Hearing misogyny from students can leave staff angry or upset. Make space to talk it through (the 2-minute debrief, supervision or the DSL) before planning the response. Being personally targeted is different: see <em>Supporting Those Affected</em>.</li>
+                        </ul>
+                        <p class="stat-note"><a href="https://doi.org/10.51952/9781447378839" target="_blank" rel="noopener">Firmin et al., <em>Beyond Risk in Adolescent Safeguarding</em> (2026)</a>, pp. 38 and 88.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-8">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #1E3D6F 0%, #8424E8 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-route"></i></span>
+                    <span>Walk It Through RESPOND: Three Age-Group Scenarios</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+
+                    <p>Fictional scenarios with model answers. In every one, someone other than the speaker is affected: RESPOND is not only about the student repeating the ideas.</p>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4><i class="fas fa-shapes"></i> Ages 4 to 9: &quot;Men are in charge&quot;</h4>
+                            <span>▼</span>
+                        </div>
+                        <div class="accordion-body">
+<p><em>In free play, a Year 4 boy keeps telling girls they can&#39;t be "the boss" of the game because "men are in charge; my brother&#39;s videos say so." Two girls now refuse to join in.</em></p><div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Step</th><th>What you do</th></tr></thead><tbody><tr><td><span class="k-dot" style="background:#24457B"></span><strong style="color:#24457B;">Recognise</strong></td><td>4 Ps: a copied script; peer impact (two girls now excluded); a home and online source (the brother's videos).</td></tr><tr><td><span class="k-dot" style="background:#1E5947"></span><strong style="color:#1E5947;">Engage</strong></td><td>TED: &quot;Tell me what 'the boss' means.&quot; &quot;Explain who says that.&quot; Direct, kindly: &quot;In our games anyone can be the boss.&quot;</td></tr><tr><td><span class="k-dot" style="background:#C27D56"></span><strong style="color:#C27D56;">Support</strong></td><td>Safety first: bring the girls back into the game and reset its rule. Connection before correction for the boy.</td></tr><tr><td><span class="k-dot" style="background:#D13529"></span><strong style="color:#D13529;">Pause</strong></td><td>90-second grounding. Three Lenses: likely low risk; note the older sibling's online content; everyone's right to join in.</td></tr><tr><td><span class="k-dot" style="background:#F0B126"></span><strong style="color:#B9850F;">Offer</strong></td><td>Model alternatives: stories and play roles that show a range of leaders; take turns being &quot;the boss&quot;.</td></tr><tr><td><span class="k-dot" style="background:#2E81CF"></span><strong style="color:#2E81CF;">Notify</strong></td><td>Tell the class teacher and record as soon as is practicably possible. The DSL decides whether to talk with parents about home device use.</td></tr><tr><td><span class="k-dot" style="background:#8424E8"></span><strong style="color:#8424E8;">Document</strong></td><td>GOLD: the child's exact words, who was affected, what you did and why.</td></tr></tbody></table></div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4><i class="fas fa-mobile-alt"></i> Ages 10 to 13: &quot;Mog&quot; ratings in a group chat</h4>
+                            <span>▼</span>
+                        </div>
+                        <div class="accordion-body">
+<p><em>A Year 8 boy posts classmates&#39; photos in a group chat with "mog" ratings. A boy rated lowest has started skipping lunch and avoiding the changing rooms.</em></p><div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Step</th><th>What you do</th></tr></thead><tbody><tr><td><span class="k-dot" style="background:#24457B"></span><strong style="color:#24457B;">Recognise</strong></td><td>Appearance-based bullying and potential child-on-child abuse. Assess whether the images or comments are sexualised, whether there is repeated targeting, and the impact on the students involved. The boy avoiding lunch and the changing rooms needs prompt safeguarding attention.</td></tr><tr><td><span class="k-dot" style="background:#1E5947"></span><strong style="color:#1E5947;">Engage</strong></td><td>Speak to the student who posted calmly and privately. TED, not &quot;why&quot;. 4Ds: Direct if you see it happen.</td></tr><tr><td><span class="k-dot" style="background:#C27D56"></span><strong style="color:#C27D56;">Support</strong></td><td>Safety first: check in today with the boy rated lowest (lunch, changing rooms) and with any other students pictured.</td></tr><tr><td><span class="k-dot" style="background:#D13529"></span><strong style="color:#D13529;">Pause</strong></td><td>Three Lenses: is the chat still active? Images of others shared without consent. Do not investigate or promise confidentiality.</td></tr><tr><td><span class="k-dot" style="background:#F0B126"></span><strong style="color:#B9850F;">Offer</strong></td><td>Model alternatives: repair and restorative options, but only after the DSL's safeguarding decisions. If in doubt, N before O.</td></tr><tr><td><span class="k-dot" style="background:#2E81CF"></span><strong style="color:#2E81CF;">Notify</strong></td><td>DSL as soon as is practicably possible, and today. The DSL coordinates any contact with parents or external agencies.</td></tr><tr><td><span class="k-dot" style="background:#8424E8"></span><strong style="color:#8424E8;">Document</strong></td><td>GOLD. Record what you saw, where, and who told you. Don't forward or share the photos. If any image is sexual, follow the <a href="https://www.gov.uk/government/publications/sharing-nudes-and-semi-nudes-advice-for-education-settings-working-with-children-and-young-people" target="_blank" rel="noopener">UKCIS nudes and semi-nudes guidance</a> instead: don't view, copy, forward or delete it, and tell the DSL immediately.</td></tr></tbody></table></div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4><i class="fas fa-bed"></i> Ages 14 to 18 and Boarding: &quot;No point trying&quot;</h4>
+                            <span>▼</span>
+                        </div>
+                        <div class="accordion-body">
+<p><em>A Year 12 boarder tells a houseparent that girls "only want the top 10%" and there&#39;s "no point trying". He has stopped going to meals and games late into the night.</em></p><div style="overflow-x:auto;"><table class="respond-key"><thead><tr><th>Step</th><th>What you do</th></tr></thead><tbody><tr><td><span class="k-dot" style="background:#24457B"></span><strong style="color:#24457B;">Recognise</strong></td><td>Black-pill fatalism alongside withdrawal, missed meals and disrupted sleep. The wellbeing concern comes first.</td></tr><tr><td><span class="k-dot" style="background:#1E5947"></span><strong style="color:#1E5947;">Engage</strong></td><td>The houseparent keeps the relationship and asks directly and kindly how he is doing. Don't debate the ideology tonight.</td></tr><tr><td><span class="k-dot" style="background:#C27D56"></span><strong style="color:#C27D56;">Support</strong></td><td>Safety first: meals, a night-time routine, a trusted adult. Your calm is contagious.</td></tr><tr><td><span class="k-dot" style="background:#D13529"></span><strong style="color:#D13529;">Pause</strong></td><td>90-second grounding. Three Lenses: consider any risk to himself; his right to support; what boarding, counselling and the school nurse or health centre can offer.</td></tr><tr><td><span class="k-dot" style="background:#F0B126"></span><strong style="color:#B9850F;">Offer</strong></td><td>Model alternatives: counselling and pastoral support; offline interests; other pictures of what success and relationships look like.</td></tr><tr><td><span class="k-dot" style="background:#2E81CF"></span><strong style="color:#2E81CF;">Notify</strong></td><td>DSL as soon as is practicably possible. If there is any sign of risk to himself, act immediately under the mental health and safeguarding procedures: go straight from R to N.</td></tr><tr><td><span class="k-dot" style="background:#8424E8"></span><strong style="color:#8424E8;">Document</strong></td><td>GOLD: his exact words, dates, and the pattern observed by boarding staff.</td></tr></tbody></table></div>
+                        </div>
+                    </div>
+                    <p class="stat-note">RESPOND is taught in sequence but works as a helix: you may go straight from Recognise to Notify when there is risk, or loop back to Recognise when new information appears. With this content, the steps most often skipped are <strong>Pause</strong> (reacting to the ideology rather than assessing risk) and <strong>Document</strong> (single comments go unrecorded, so the pattern stays invisible). <em>Staff Guide 101</em> has an interactive RESPOND Helix showing how the steps move in practice.</p>
+                </div><div class="subsection">
+                    <h3><i class="fas fa-star"></i> Five Things to Remember</h3>
+
+                    <ol class="list-styled" style="padding-left: 22px;">
+                        <li><strong>An ecosystem, not a website:</strong> many creators, one set of recurring messages.</li>
+                        <li><strong>Driven by influencers and algorithms:</strong> content finds students through recommendation and monetised attention.</li>
+                        <li><strong>It arrives through humour, gaming, fitness and self-improvement</strong>, not only through obviously ideological content.</li>
+                        <li><strong>One phrase is not a diagnosis:</strong> look at People, Places, Platforms and Patterns.</li>
+                        <li><strong>Connection beats ridicule or panic:</strong> connection, critical literacy and clear boundaries are stronger together.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="respond-section" id="sec-9">
+            <div class="respond-header collapsed" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #475569 0%, #334155 100%);">
+                <h2>
+                    <span class="respond-letter"><i class="fas fa-link"></i></span>
+                    <span>Sources</span>
+                </h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="respond-content">
+<div class="subsection">
+<ul class="list-styled source-list"><li><a href="https://doi.org/10.51952/9781447378839" target="_blank" rel="noopener">Firmin, Langhoff, Peace, Lefevre, Huegler and Eyal-Lubling (2026), <em>Beyond Risk in Adolescent Safeguarding</em>, Policy Press (open access)</a></li><li><a href="https://www.dcu.ie/antibullyingcentre/recommending-toxicity-summary-report" target="_blank" rel="noopener">Dublin City University Anti-Bullying Centre, <em>Recommending Toxicity</em> (summary report, 2024)</a></li><li><a href="https://doi.org/10.1177/20563051241228811" target="_blank" rel="noopener">Haslop, Ringrose, Cambazoglu and Milne (2024), <em>Social Media + Society</em> (University of Liverpool and UCL)</a></li><li><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank" rel="noopener">Department for Education, <em>Keeping Children Safe in Education 2026</em></a></li><li><a href="https://www.gov.uk/government/publications/sharing-nudes-and-semi-nudes-advice-for-education-settings-working-with-children-and-young-people" target="_blank" rel="noopener">UKCIS, <em>Sharing nudes and semi-nudes: advice for education settings</em></a></li></ul>
+<p class="stat-note">Figures checked against the original sources in September 2026. The glossary, age examples and scenarios are practice guidance, not research findings.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-buttons" style="margin-top: 40px; justify-content: center;">
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1wLkUhEVzRLQLY5XMJ4Ws9dUk5XfM4FJ1/view?usp=drive_link" target="_blank" rel="noopener" style="background:#1E3D6F;"><i class="fas fa-file-pdf"></i> Download PDF</a>
+            <button type="button" id="printButton" class="btn print-btn js-print"><i class="fas fa-print"></i> Print</button>
+        </div>
+        <p class="print-hint" style="text-align:center; font-size:0.9em; color:var(--text-light); margin-top:-15px;"><strong>Download PDF</strong> opens this guide as a PDF in Google Drive, to save or print. <strong>Print</strong> opens a printable copy in a new tab; if nothing opens, expand all sections and press Ctrl+P (Windows) or Cmd+P (Mac).</p>
+
+        <footer>
+            <p><strong>RESPOND</strong> Safeguarding Framework Reference Scenarios · Staff Guide 102</p>
+            <p>Scenario 102: Online Influence and the Manosphere (companion to Scenario 101)</p>
+            <p>© 2026/27 | <strong>RESPOND</strong> Safeguarding Framework</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                Aligned with: KCSIE 2026 | Working Together to Safeguard Children 2026 | <em>Freedom from violence and abuse</em> (December 2025) | RSHE statutory guidance (published July 2025; statutory from September 2026) | Equality Act 2010
+            </p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Last Updated: September 2026 | Next Review: September 2027, or on publication of KCSIE 2027 if sooner
+            </p>
+            <p style="margin-top: 15px; font-size: 0.85em; opacity: 0.8;">
+                For staff in schools and other settings working with children. You may share it with colleagues. Share the student and parent guides, not this page, with students and families.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                header.classList.add('collapsed');
+            } else {
+                content.classList.add('show');
+                header.classList.remove('collapsed');
+            }
+        }
+
+        function expandAll(btn) {
+            const allSections = document.querySelectorAll('.respond-content');
+            const allHeaders = document.querySelectorAll('.respond-header');
+            btn = btn.closest ? btn.closest('button') : btn;
+            
+            if (btn.textContent.includes('Expand')) {
+                allSections.forEach(section => section.classList.add('show'));
+                allHeaders.forEach(header => header.classList.remove('collapsed'));
+                btn.textContent = btn.classList.contains('tb-expand') ? 'Collapse all' : 'Collapse All Sections';
+            } else {
+                allSections.forEach(section => section.classList.remove('show'));
+                allHeaders.forEach(header => header.classList.add('collapsed'));
+                btn.textContent = btn.classList.contains('tb-expand') ? 'Expand all' : 'Expand All Sections';
+            }
+        }
+
+        function toggleAccordion(header) {
+            const body = header.nextElementSibling;
+            const icon = header.querySelector('span');
+            
+            if (body.classList.contains('open')) {
+                body.classList.remove('open');
+                icon.textContent = '▼';
+            } else {
+                body.classList.add('open');
+                icon.textContent = '▲';
+            }
+        }
+
+        function expandEverything() {
+            document.querySelectorAll('.respond-content').forEach(el => el.classList.add('show'));
+            document.querySelectorAll('.respond-header').forEach(el => el.classList.remove('collapsed'));
+            document.querySelectorAll('.accordion-body').forEach(el => el.classList.add('open'));
+            document.querySelectorAll('.accordion-header > span:last-child').forEach(el => el.textContent = '▲');
+            document.querySelectorAll('details').forEach(d => d.open = true);
+        }
+
+        // Any browser print (including Ctrl+P / Cmd+P) prints the full content
+        window.addEventListener('beforeprint', expandEverything);
+
+        function printScenario() {
+            expandEverything();
+            // Build a standalone copy that prints itself. Needed because Google Sites
+            // embeds cannot print their own content directly.
+            let opened = null;
+            try {
+                document.documentElement.setAttribute('data-printable', '1');
+                const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                document.documentElement.removeAttribute('data-printable');
+                const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
+                opened = window.open(url, '_blank');
+            } catch (err) {
+                opened = null;
+            }
+            if (!opened) {
+                setTimeout(function () {
+                    alert('All sections are now expanded.\n\nA printable copy could not be opened (pop-ups may be blocked).\n\nPress Ctrl+P (Windows) or Cmd+P (Mac), and choose "Save as PDF" to keep a copy.');
+                }, 200);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.documentElement.getAttribute('data-printable') === '1') {
+                expandEverything();
+                setTimeout(function () { window.print(); }, 600);
+                return;
+            }
+            document.querySelectorAll('.js-print').forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    printScenario();
+                });
+            });
+        });
+
+        // All sections start collapsed
+    
+        document.addEventListener('click', function (e) {
+            const a = e.target.closest('.toc-link');
+            if (!a) return;
+            e.preventDefault();
+            const el = document.getElementById(a.getAttribute('data-target'));
+            if (!el) return;
+            const header = el.classList.contains('respond-section') ? el.querySelector('.respond-header') : null;
+            if (header && header.classList.contains('collapsed')) toggleSection(header);
+            setTimeout(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
+        });
+
+        (function () {
+            function closeDrops(except) {
+                document.querySelectorAll('.top-toolbar details.tb-drop[open]').forEach(function (d) { if (d !== except) d.removeAttribute('open'); });
+            }
+            document.querySelectorAll('.top-toolbar details.tb-drop').forEach(function (d) {
+                d.addEventListener('toggle', function () { if (d.open) closeDrops(d); });
+            });
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.top-toolbar')) closeDrops(null);
+                if (e.target.closest('.tb-panel .toc-link')) closeDrops(null);
+            });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrops(null); });
+        })();
+
+        (function () {
+            var input = document.getElementById('pageSearch');
+            if (!input) return;
+            var countEl = document.querySelector('.tb-search-count');
+            var hits = [], current = -1, timer = null;
+            var bubble = document.createElement('div');
+            bubble.className = 'srch-bubble'; bubble.setAttribute('role', 'group'); bubble.setAttribute('aria-label', 'Search results');
+            bubble.innerHTML = '<span class="sb-count"></span><button type="button" data-d="-1" aria-label="Previous match">&#8593;</button><button type="button" data-d="1" aria-label="Next match">&#8595;</button><button type="button" class="sb-close" aria-label="Close search">&#10005;</button>';
+            document.body.appendChild(bubble);
+            function placeBubble() {
+                if (current < 0 || !hits[current]) bubble.classList.remove('show'); else bubble.classList.add('show');
+            }
+            bubble.addEventListener('click', function (e) {
+                var b = e.target.closest('button'); if (!b) return;
+                if (b.classList.contains('sb-close')) { input.value = ''; clearHits(); return; }
+                go(current + parseInt(b.getAttribute('data-d'), 10));
+            });
+            function clearHits() {
+                document.querySelectorAll('mark.srch-hit').forEach(function (m) {
+                    var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); p.normalize();
+                });
+                hits = []; current = -1; countEl.textContent = '';
+                if (typeof bubble !== 'undefined') bubble.classList.remove('show');
+            }
+            function reveal(el) {
+                var c = el.closest('.respond-content');
+                if (c && !c.classList.contains('show')) { var h = c.previousElementSibling; if (h) toggleSection(h); }
+                var a = el.closest('.accordion-body');
+                if (a && !a.classList.contains('open')) { var ah = a.previousElementSibling; if (ah) toggleAccordion(ah); }
+                var d = el.closest('details');
+                while (d) { if (!d.classList.contains('tb-drop')) d.open = true; d = d.parentElement ? d.parentElement.closest('details') : null; }
+            }
+            function go(i) {
+                if (!hits.length) return;
+                if (current >= 0 && hits[current]) hits[current].classList.remove('srch-current');
+                current = (i + hits.length) % hits.length;
+                var m = hits[current]; m.classList.add('srch-current'); reveal(m);
+                countEl.textContent = (current + 1) + ' of ' + hits.length;
+                bubble.querySelector('.sb-count').textContent = (current + 1) + ' of ' + hits.length;
+                placeBubble();
+                setTimeout(function () { m.scrollIntoView({ behavior: 'auto', block: 'center' }); }, 30);
+            }
+            function run() {
+                clearHits();
+                var q = input.value.trim();
+                if (q.length < 2) return;
+                var esc = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                var re = new RegExp(esc, 'gi'), reTest = new RegExp(esc, 'i');
+                var root = document.querySelector('.container');
+                var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+                    acceptNode: function (n) {
+                        var p = n.parentElement;
+                        if (!p || p.closest('script, style, .top-toolbar, mark.srch-hit')) return NodeFilter.FILTER_REJECT;
+                        return reTest.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+                    }
+                });
+                var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+                nodes.forEach(function (n) {
+                    if (hits.length > 500) return;
+                    var text = n.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+                    re.lastIndex = 0;
+                    while ((m = re.exec(text)) !== null) {
+                        frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+                        var mk = document.createElement('mark'); mk.className = 'srch-hit'; mk.textContent = m[0];
+                        frag.appendChild(mk); hits.push(mk); last = m.index + m[0].length;
+                        if (m[0].length === 0) re.lastIndex++;
+                    }
+                    frag.appendChild(document.createTextNode(text.slice(last)));
+                    n.parentNode.replaceChild(frag, n);
+                });
+                if (!hits.length) { countEl.textContent = 'No matches'; bubble.classList.remove('show'); return; }
+                go(0);
+            }
+            input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 300); });
+            input.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') { e.preventDefault(); if (hits.length) go(current + (e.shiftKey ? -1 : 1)); else run(); }
+                if (e.key === 'Escape') { input.value = ''; clearHits(); }
+            });
+            document.querySelectorAll('.tb-search-nav').forEach(function (b) {
+                b.addEventListener('click', function () { if (!hits.length) run(); else go(current + parseInt(b.getAttribute('data-dir'), 10)); });
+            });
+            window.addEventListener('beforeprint', clearHits);
+        })();
+</script>
+</body>
+</html>
